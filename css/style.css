@@ -45,7 +45,7 @@ body {
 
 .content h1 {
   margin: -8rem 0 2rem 0;
-  font-size: 3rem;
+  font-size: 3.6rem;
 }
 
 .content p {
@@ -53,28 +53,42 @@ body {
 }
 
 /* Social media */
-
-.social-media ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.social-media ul li {
-  display: inline-block;
-  margin: 0 16px 0 0;
-  font-size: 14px;
-}
-.social-media ul li:last-child {
-  margin: 0;
-}
-.social-media ul li a {
-  display: block;
-  width: 16px;
-  color: #fff;
+.social {
+  margin-top: 0.8rem;
+  text-align: center;
+  overflow: hidden;
 }
 
- /* Cranes animation */
+.social a {
+  color: inherit;
+  text-decoration: none;
+  margin: 0 1rem;
+}
 
+.social i {
+  margin: .3rem;
+  cursor: pointer;
+  -webkit-transition: color 300ms ease, margin-top 150ms ease;
+  transition: color 300ms ease, margin-top 150ms ease;
+}
+
+.social i:hover {
+  margin-top: -2px;
+}
+
+.social i#github:hover {
+  color: #24292E;
+}
+
+.social i#linkedin:hover {
+  color: #1178B2;
+}
+
+.social i#mail:hover {
+  color: #5996EA;
+}
+
+ /* Cranes */
 #outerCraneContainer {
   position: absolute;
   width: 100%;
@@ -88,6 +102,7 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   box-shadow: inset 0 -60px 0 -30px #ff6347;
+  z-index: -1;
 }
 
 .buildings {
@@ -463,6 +478,62 @@ body {
   animation: moveWeight 12s infinite alternate;
 }
 
+/* Animations */
+@-webkit-keyframes bounceInLeft {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    transform: none;
+  }
+}
+@keyframes bounceInLeft {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
 @-webkit-keyframes moveCrane {
   0%, 20% {
     -webkit-transform: rotateY(0);
@@ -596,3 +667,17 @@ body {
     height: 80%;
   }
 }
+
+/* Responsive resizing */
+@media (max-width: 480px) {
+  .content h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .content h1 {
+    font-size: 2.6rem;
+  }
+}
+
