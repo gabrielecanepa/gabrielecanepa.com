@@ -32,19 +32,15 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   text-align: center;
   font-family: Ubuntu;
   color: #FFF;
+  padding-top: 4.2rem;
 }
 
 .content h1 {
-  margin: -8rem 0 2rem 0;
+  margin-bottom: 2rem;
   font-size: 3.6rem;
 }
 
@@ -68,8 +64,8 @@ body {
 .social i {
   margin: .3rem;
   cursor: pointer;
-  -webkit-transition: color 300ms ease, margin-top 150ms ease;
-  transition: color 300ms ease, margin-top 150ms ease;
+  -webkit-transition: color 300ms ease, margin-top 100ms ease;
+  transition: color 300ms ease, margin-top 100ms ease;
 }
 
 .social i:hover {
