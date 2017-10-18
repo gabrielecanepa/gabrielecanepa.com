@@ -32,11 +32,16 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   text-align: center;
   font-family: Ubuntu;
   color: #FFF;
-  padding: 4rem 1rem;
+  padding-bottom: 4rem;
 }
 
 .content h1 {
@@ -44,13 +49,9 @@ body {
   font-size: 3.6rem;
 }
 
-.content p {
-  margin-top: 2rem;
-}
-
 /* Social media */
 .social {
-  margin-top: 0.8rem;
+  margin-top: 2rem;
   text-align: center;
   overflow: hidden;
 }
@@ -612,8 +613,10 @@ body {
 /* Responsive resizing */
 @media (max-width: 480px) {
   .content h1 {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
+
+  .content
 }
 
 @media (min-width: 480px) and (max-width: 768px) {
