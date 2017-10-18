@@ -36,7 +36,7 @@ body {
   text-align: center;
   font-family: Ubuntu;
   color: #FFF;
-  padding-top: 4.2rem;
+  padding: 4rem 1rem;
 }
 
 .content h1 {
@@ -612,7 +612,7 @@ body {
 /* Responsive resizing */
 @media (max-width: 480px) {
   .content h1 {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 }
 
