@@ -41,17 +41,11 @@ body {
   text-align: center;
   font-family: Ubuntu;
   color: #FFF;
-  padding-bottom: 4rem;
-}
-
-.content h1 {
-  margin-bottom: 2rem;
-  font-size: 3.6rem;
 }
 
 /* Social media */
 .social {
-  margin-top: 2rem;
+  margin-top: 3rem;
   text-align: center;
   overflow: hidden;
 }
@@ -59,11 +53,10 @@ body {
 .social a {
   color: inherit;
   text-decoration: none;
-  margin: 0 1rem;
+  margin: 0 1.4rem;
 }
 
 .social i {
-  margin: .3rem;
   cursor: pointer;
   -webkit-transition: color 300ms ease, margin-top 100ms ease;
   transition: color 300ms ease, margin-top 100ms ease;
@@ -98,7 +91,7 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  box-shadow: inset 0 -60px 0 -30px #ff6347;
+  box-shadow: inset 0 -60px 0 -30px #FF6347;
   z-index: -1;
 }
 
