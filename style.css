@@ -44,7 +44,6 @@ body {
   padding-bottom: 20vh;
 }
 
-/* Social media */
 .social {
   margin-top: 3rem;
   text-align: center;
@@ -79,7 +78,6 @@ body {
   color: #5996EA;
 }
 
- /* Cranes */
 #outerCraneContainer {
   position: absolute;
   width: 100%;
@@ -469,7 +467,6 @@ body {
   animation: moveWeight 12s infinite alternate;
 }
 
-/* Animations */
 @-webkit-keyframes moveCrane {
   0%, 20% {
     -webkit-transform: rotateY(0);
@@ -601,21 +598,6 @@ body {
     -webkit-transform: translate(9100%, -15%);
             transform: translate(9100%, -15%);
     height: 80%;
-  }
-}
-
-/* Responsive resizing */
-@media (max-width: 480px) {
-  .content h1 {
-    font-size: 1.2rem;
-  }
-
-  .content
-}
-
-@media (min-width: 480px) and (max-width: 768px) {
-  .content h1 {
-    font-size: 2.6rem;
   }
 }
 
