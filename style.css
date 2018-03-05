@@ -62,8 +62,8 @@ body {
   margin: 0 1.4rem;
 }
 .content .social #lewagon-logo {
-  margin-left: 1rem;
-  margin-right: 0.5rem;
+  margin-left: 0.8rem;
+  margin-right: 0rem;
 }
 .content .social-padding {
   align-self: flex-end;
@@ -441,7 +441,7 @@ body {
 
 .tippy-tooltip[data-template-id="#mailTooltip"] {
   font: ;
-  width: 200px;
+  width: 250px;
   padding: 1rem;
   font-family: Ubuntu;
 }
