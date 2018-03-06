@@ -14,7 +14,6 @@ const avatarTip = tippy('#avatarTooltip', {
   html: '#randomMessage',
   onShow() {
     const quotes = ['Hello!', '&iexcl;Hola!', 'Ciao!', 'Olá!', 'Oi!'];
-    // `this` inside callbacks refers to the popper element
     const content = this.querySelector('.tippy-content');
     content.innerHTML = quotes[Math.floor(Math.random() * quotes.length)];
     avatarTip.loading = false;
