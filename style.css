@@ -13,7 +13,7 @@ html, body {
 }
 body {
   background: -webkit-linear-gradient(bottom, #FFA191, #FFC247);
-  background: linear-gradient(to top, #FFA191, #FFCß247);
+  background: linear-gradient(to top, #FFA191, #FFC247);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
@@ -40,8 +40,11 @@ body {
   color: #FFF;
   padding-bottom: 20vh;
 }
+.content #avatar {
+  width: 100px;
+}
 .content #wheels {
-  width: 280px;
+  width: 220px;
 }
 .content h1 {
   padding-top: 0.4rem;
