@@ -52,8 +52,7 @@ body {
   width: 150px;
 }
 .content h1 {
-  padding-top: 0.4rem;
-  padding-bottom: 0.6rem;
+  padding: 0.4rem 0;
   font-size: 2.8rem;
 }
 .content .social {
@@ -67,7 +66,10 @@ body {
 .content .social a {
   color: inherit;
   text-decoration: none;
-  margin: 0 1rem;
+  margin: 0 0.6rem;
+}
+.content .social a:first-child {
+  margin-top: 2px;
 }
 .content .social #lewagon-logo {
   margin-left: 0.4rem;
@@ -105,7 +107,7 @@ body {
 .content #codepen {
   position: absolute;
   text-align: right;
-  bottom: 4px;
+  bottom: 3px;
   right: 6px;
 }
 .content #codepen-logo {
@@ -586,23 +588,56 @@ body {
   }
 }
 
+/*Responsive width*/
 @media only screen and (max-width: 372px) {
+  .content {
+    justify-content: flex-start;
+  }
+  .content .avatar {
+    width: 80px;
+    padding-top: 2rem;
+  }
+  .content #wheels {
+    width: 110px;
+  }
+  .content h1 {
+    font-size: 1.8rem;
+  }
   .content .social {
-    height: 3.2rem;
+    height: 2.5rem;
   }
   .content .social a {
     color: inherit;
     text-decoration: none;
-    margin: 0 0.8rem;
+    margin: 0 0.6rem;
   }
   .content .social i {
-    font-size: 2.5em;
+    font-size: 2rem;
   }
   .content .social #lewagon-logo {
-    margin-left: 0.5rem;
-    margin-right: 0;
+    margin-left: 0;
+    margin-right: -0.4rem;
   }
   .content .social #lewagon {
-    font-size: 2.8rem;
+    font-size: 2.1rem;
+  }
+}
+@media only screen and (min-width: 372px) and (max-width: 768px) {
+  .content h1 {
+    font-size: 2rem;
+  }
+}
+/*Responsive height*/
+@media only screen and (max-height: 375px) {
+  .content .avatar {
+    padding-top: 10px;
+  }
+  .content .avatar, .content #wheels, .content h1  {
+    display: none;
+  }
+}
+@media only screen and (min-height: 375px) and (max-height: 535px) {
+  .content #wheels, .content h1  {
+    display: none;
   }
 }
