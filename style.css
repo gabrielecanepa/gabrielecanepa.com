@@ -40,9 +40,12 @@ body {
   color: #FFF;
   padding-bottom: 20vh;
 }
-.content #avatar {
+.content .avatar {
   width: 80px;
   margin-bottom: 1rem;
+}
+.content .avatar:hover {
+  cursor: none;
 }
 .content #wheels {
   margin-top: 1rem;
