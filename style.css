@@ -70,6 +70,7 @@ body {
 }
 .content .social a:first-child {
   margin-top: 2px;
+  margin-right: 12px;
 }
 .content .social #lewagon-logo {
   margin-left: 0.4rem;
@@ -590,9 +591,6 @@ body {
 
 /*Responsive width*/
 @media only screen and (max-width: 372px) {
-/*  .content {
-    justify-content: flex-start;
-  }*/
   .content .avatar {
     width: 80px;
     padding-top: 2rem;
@@ -621,10 +619,16 @@ body {
   .content .social #lewagon {
     font-size: 2.1rem;
   }
+  .craneTwo {
+    display: none;
+  }
 }
 @media only screen and (min-width: 372px) and (max-width: 768px) {
   .content h1 {
     font-size: 2rem;
+  }
+  .craneTwo {
+    display: none;
   }
 }
 /*Responsive height*/
