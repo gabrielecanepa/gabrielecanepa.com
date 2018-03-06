@@ -1,15 +1,21 @@
 // Avatar tooltip
 const message = document.querySelector('#randomMessage');
 const initialText = message.textContent;
+// function randomPlacement(items) {
+//   return items[Math.floor(Math.random() * items.length)];
+// }
+// const placements = ['top', 'start-top', 'top-end', 'bottom', 'start-bottom', 'bottom-end', 'left', 'start-left', 'left-end', 'right', 'start-right', 'right-end'];
 const avatarTip = tippy('#avatarTooltip', {
   arrow: true,
   distance: 20,
+  placement: 'right',
+  // placement: randomPlacement(placements),
   interactive: true,
   html: '#randomMessage',
   onShow() {
-    const quotes = ['Hello', 'Hola']
+    const quotes = ['Hello!', '&iexcl;Hola!', 'Ciao!', 'Olá!', 'Oi!'];
     // `this` inside callbacks refers to the popper element
-    const content = this.querySelector('.tippy-content')
+    const content = this.querySelector('.tippy-content');
     content.innerHTML = quotes[Math.floor(Math.random() * quotes.length)];
     avatarTip.loading = false;
   },
