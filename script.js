@@ -5,11 +5,12 @@ const initialText = message.textContent;
 //   return items[Math.floor(Math.random() * items.length)];
 // }
 // const placements = ['top', 'start-top', 'top-end', 'bottom', 'start-bottom', 'bottom-end', 'left', 'start-left', 'left-end', 'right', 'start-right', 'right-end'];
+
 const avatarTip = tippy('#avatarTooltip', {
   arrow: true,
   distance: 20,
-  placement: 'right',
-  // placement: randomPlacement(placements),
+  placement: 'right', // randomPlacement(placements)
+  inertia: true,
   interactive: true,
   html: '#randomMessage',
   onShow() {
