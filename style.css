@@ -625,7 +625,13 @@ body {
 }
 @media only screen and (min-width: 372px) and (max-width: 768px) {
   .content h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
+  }
+  .content .social {
+    height: 2.7rem;
+  }
+  .content .social i {
+    font-size: 2.2rem;
   }
   .craneTwo {
     display: none;
