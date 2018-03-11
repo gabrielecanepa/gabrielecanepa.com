@@ -592,7 +592,7 @@ body {
 /*Responsive width*/
 @media only screen and (max-width: 372px) {
   .content .avatar {
-    width: 80px;
+    width: 60px;
     padding-top: 2rem;
   }
   .content #wheels {
