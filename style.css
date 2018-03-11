@@ -83,7 +83,6 @@ body {
   font-size: 2.5rem;
   color: #FFF;
   cursor: pointer;
-  /*text-shadow: 0 0 0.4px rgba(0,0,0,0.1);*/
   -webkit-transition: color 300ms ease, margin-top 100ms ease;
   transition: color 300ms ease, margin-top 100ms ease;
 }
@@ -460,6 +459,7 @@ body {
   font-family: Ubuntu;
 }
 
+/*Keyframes*/
 @-webkit-keyframes moveCrane {
   0%, 20% {
     -webkit-transform: rotateY(0);
