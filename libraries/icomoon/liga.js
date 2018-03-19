@@ -1,9 +1,3 @@
-/* A polyfill for browsers that don't support ligatures. */
-/* The script tag referring to this file must be placed before the ending body tag. */
-
-/* To provide support for elements dynamically added, this script adds
-   method 'icomoonLiga' to the window object. You can pass element references to this method.
-*/
 (function () {
     'use strict';
     function supportsProperty(p) {
