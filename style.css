@@ -240,29 +240,35 @@ body {
   left: 9%;
 }
 .crane .line.line-three:after {
-  content: '';
+  font-family: 'icomoon' !important;
   position: absolute;
-  height: 0.2em;
-  width: 9000%;
-  background: #FF826c;
   display: block;
   bottom: 0;
-  left: -4500%;
-  border: solid 1.2px #FF6347;
-  border-radius: 2px;
+  font-size: 2rem;
+  width: 0;
   z-index: 10;
+  -webkit-animation: shake 12s infinite alternate;
+  animation: shake 12s infinite alternate;
+  /*
+    left
+    height
+    width
+  */
+}
+.crane-one .line.line-three:after {
+  content: "\e911";
+  color: #f7df1e;
 }
 .crane-two .line.line-three:after {
   /*height: 0.15em;*/
-  font-family: 'icomoon' !important;
-  content: "\e911";
-  color: #f7df1e;
+  content: "\e90c";
+  color: #e34f26;
+  left: -2.8px;
   height: 0.4em;
-  border: none;
-  left: -3.4px;
-  width: 0;
   font-size: 2rem;
   transform: rotate(45deg);
+  -webkit-animation: shake 12s infinite alternate;
+  animation: shake 12s infinite alternate;
 }
 .crane-three .line.line-three:after {
   height: 0.1em;
@@ -572,6 +578,34 @@ body {
     -webkit-transform: translate(9100%, -15%);
             transform: translate(9100%, -15%);
     height: 80%;
+  }
+}
+@-webkit-keyframes shake {
+  from, to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(-2px, 0, 0);
+            transform: translate3d(-2px, 0, 0);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0);
+  }
+}
+@keyframes shake {
+  from, to {
+    -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
+    transform: translate3d(0, 0, 0) rotate(45deg);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(-2px, 0, 0) rotate(30deg);
+            transform: translate3d(-2px, 0, 0) rotate(30deg);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(2px, 0, 0) rotate(60deg);
+            transform: translate3d(2px, 0, 0) rotate(60deg);
   }
 }
 
