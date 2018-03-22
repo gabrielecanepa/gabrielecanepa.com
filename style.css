@@ -137,7 +137,7 @@ body {
   z-index: -1;
 }
 .buildings {
-  height: 85px;
+  height: 90px;
   width: 100%;
   left: 0;
 }
@@ -235,7 +235,7 @@ body {
   top: 0;
 }
 .crane .line.line-three {
-  height: 30%;
+  height: 10%;
   top: 22%;
   left: 9%;
 }
@@ -248,13 +248,8 @@ body {
   height: 0.4rem;
   width: 0;
   z-index: 10;
-  -webkit-animation: shake 12s infinite alternate;
-  animation: shake 12s infinite alternate;
-  /*
-    font-size
-    left
-    height
-  */
+  -webkit-animation: shakeBlock 12s infinite alternate;
+  animation: shakeBlock 12s infinite alternate;
 }
 .crane-one .line.line-three:after {
   content: "\e911";
@@ -264,13 +259,12 @@ body {
   height: 0.4rem;
 }
 .crane-two .line.line-three:after {
-  /*height: 0.15em;*/
   content: "\e90b";
   color: #1572b6;
   left: -2.8px;
   transform: rotate(45deg);
-  -webkit-animation: shake 12s infinite alternate;
-  animation: shake 12s infinite alternate;
+  -webkit-animation: shakeBlock 12s infinite alternate;
+  animation: shakeBlock 12s infinite alternate;
 }
 .crane-three .line.line-three:after {
   content: "\e90f";
@@ -389,7 +383,7 @@ body {
 }
 .crane-three {
   width: 130px;
-  height: 84.9673202614379px;
+  height: 100px;
   left: 60%;
 }
 .crane-three div {
@@ -568,6 +562,7 @@ body {
   20% {
     -webkit-transform: translate(2500%, -18%);
             transform: translate(2500%, -18%);
+    height: 10%;
   }
   60% {
     -webkit-transform: translate(11000%, -25%);
@@ -576,15 +571,15 @@ body {
   70% {
     -webkit-transform: translate(9100%, -25%);
             transform: translate(9100%, -25%);
-    height: 30%;
+    height: 25%;
   }
   90%, 100% {
     -webkit-transform: translate(9100%, -15%);
             transform: translate(9100%, -15%);
-    height: 80%;
+    height: 55%;
   }
 }
-@-webkit-keyframes shake {
+@-webkit-keyframes shakeBlock {
   from, to {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
@@ -598,7 +593,7 @@ body {
             transform: translate3d(2px, 0, 0);
   }
 }
-@keyframes shake {
+@keyframes shakeBlock {
   from, to {
     -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
     transform: translate3d(0, 0, 0) rotate(45deg);
