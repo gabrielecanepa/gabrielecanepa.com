@@ -1,5 +1,7 @@
+@import "components/content";
+@import "components/cranes";
+@import "components/tooltips";
+
 @import "animations";
-@import "content";
-@import "cranes";
-@import "mobile";
-@import "tooltips";
+@import "mixins";
+@import "variables";
