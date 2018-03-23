@@ -251,8 +251,8 @@ body {
   height: 0.4rem;
   width: 0;
   z-index: 10;
-  -webkit-animation: shakeBlock 12s infinite alternate;
-  animation: shakeBlock 12s infinite alternate;
+  -webkit-animation: shakeBlock 10s infinite alternate;
+  animation: shakeBlock 10s infinite alternate;
 }
 .crane-one .line.line-three:after {
   content: "\e911";
@@ -266,8 +266,8 @@ body {
   color: #1572b6;
   left: -2.8px;
   transform: rotate(45deg);
-  -webkit-animation: shakeBlock 12s infinite alternate;
-  animation: shakeBlock 12s infinite alternate;
+  -webkit-animation: shakeBlock 10s infinite alternate;
+  animation: shakeBlock 10s infinite alternate;
 }
 .crane-three .line.line-three:after {
   content: "\e90f";
@@ -414,34 +414,34 @@ body {
 .line-one {
   -webkit-transform-origin: right 0;
   transform-origin: right 0;
-  -webkit-animation: moveLineOne 12s infinite alternate;
-  animation: moveLineOne 12s infinite alternate;
+  -webkit-animation: moveLineOne 10s infinite alternate;
+  animation: moveLineOne 10s infinite alternate;
 }
 .line-two {
   -webkit-transform-origin: top left;
   transform-origin: top left;
-  -webkit-animation: moveLineTwo 12s infinite alternate;
-  animation: moveLineTwo 12s infinite alternate;
+  -webkit-animation: moveLineTwo 10s infinite alternate;
+  animation: moveLineTwo 10s infinite alternate;
 }
 .line-three {
   -webkit-transform-origin: right center;
   transform-origin: right center;
-  -webkit-animation: moveLineThree 12s ease-in-out infinite alternate;
-  animation: moveLineThree 12s ease-in-out infinite alternate;
+  -webkit-animation: moveLineThree 10s ease-in-out infinite alternate;
+  animation: moveLineThree 10s ease-in-out infinite alternate;
 }
 .cabin,
 .arm,
 .picker {
   -webkit-transform-origin: 80% center;
   transform-origin: 80% center;
-  -webkit-animation: moveCrane 12s infinite alternate;
-  animation: moveCrane 12s infinite alternate;
+  -webkit-animation: moveCrane 10s infinite alternate;
+  animation: moveCrane 10s infinite alternate;
 }
 .weight {
   -webkit-transform-origin: 0 center;
   transform-origin: 0 center;
-  -webkit-animation: moveWeight 12s infinite alternate;
-  animation: moveWeight 12s infinite alternate;
+  -webkit-animation: moveWeight 10s infinite alternate;
+  animation: moveWeight 10s infinite alternate;
 }
 
 .tippy-tooltip[data-template-id="#mailTooltip"] {
@@ -601,7 +601,7 @@ body {
     -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
     transform: translate3d(0, 0, 0) rotate(45deg);
   }
-  10%, 30%, 50%, 70%, 90% {
+  10%, 30%, 50%, 70% {
     -webkit-transform: translate3d(-2px, 0, 0) rotate(30deg);
             transform: translate3d(-2px, 0, 0) rotate(30deg);
   }
