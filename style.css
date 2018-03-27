@@ -238,7 +238,7 @@ body {
   top: 0;
 }
 .crane .line.line-three {
-  height: 10%;
+  height: 20%;
   top: 22%;
   left: 9%;
 }
@@ -270,9 +270,15 @@ body {
   animation: shakeBlock 10s infinite alternate;
 }
 .crane-three .line.line-three:after {
-  content: "\e90f";
+  content: "\e910";
   color: #c00;
-  height: 2em;
+  width: auto;
+  font-size: 1.4rem;
+  left: -2.8px;
+  transform: rotate(20deg);
+  -webkit-animation: shakeBlock 12s infinite alternate;
+  animation: shakeBlock 12s infinite alternate;
+
 }
 .stand {
   height: 100%;
@@ -396,7 +402,9 @@ body {
   height: 0.5px;
 }
 .crane-three .line-three {
-  width: 0.5px;
+  -webkit-animation: moveLineThreeSmall 10s ease-in-out infinite alternate;
+  animation: moveLineThreeSmall 10s ease-in-out infinite alternate;
+  width: 1px;
   -webkit-animation-delay: 1.5s;
   animation-delay: 1.5s;
 }
@@ -580,6 +588,56 @@ body {
     -webkit-transform: translate(9100%, -15%);
             transform: translate(9100%, -15%);
     height: 55%;
+  }
+}
+@-webkit-keyframes moveLineThreeSmall {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  20% {
+    -webkit-transform: translate(2500%, -18%);
+            transform: translate(2500%, -18%);
+    height: 15%;
+  }
+  60% {
+    -webkit-transform: translate(5000%, -25%);
+            transform: translate(5000%, -25%);
+  }
+  70% {
+    -webkit-transform: translate(6000%, -25%);
+            transform: translate(6000%, -25%);
+    height: 30%;
+  }
+  90%, 100% {
+    -webkit-transform: translate(7000%, 0);
+            transform: translate(7000%, 0);
+    height: 60%;
+  }
+}
+@keyframes moveLineThreeSmall {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  20% {
+    -webkit-transform: translate(2500%, -18%);
+            transform: translate(2500%, -18%);
+    height: 15%;
+  }
+  60% {
+    -webkit-transform: translate(5000%, -25%);
+            transform: translate(5000%, -25%);
+  }
+  70% {
+    -webkit-transform: translate(6000%, -25%);
+            transform: translate(6000%, -25%);
+    height: 30%;
+  }
+  90%, 100% {
+    -webkit-transform: translate(7000%, 0);
+            transform: translate(7000%, 0);
+    height: 60%;
   }
 }
 @-webkit-keyframes shakeBlock {
