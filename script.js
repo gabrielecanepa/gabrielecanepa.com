@@ -43,3 +43,10 @@ const mailTip = tippy('#mailIcon', {
   interactive: true,
   distance: 20
 });
+const mailIcon = document.getElementById('mailIcon');
+const preventDefault = function(event) {
+  if (document.querySelector('#tippy-2') == null) {
+    mailIcon.preventDefault();
+  }
+}
+// mailIcon.addEventListener('click', preventDefault, false);
