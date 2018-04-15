@@ -294,6 +294,7 @@ body {
 .crane-three .stand {
   background: -webkit-linear-gradient(bottom, #FF6347, #f08c7b);
   background: linear-gradient(to top, #FF6347, #f08c7b);
+  z-index: -1;
 }
 .weight {
   height: 20%;
