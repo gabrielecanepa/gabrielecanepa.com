@@ -694,6 +694,12 @@ body {
   .crane-two {
     display: none;
   }
+  .crane-one .line.line-three:after {
+    font-size: 1.8rem;
+  }
+  .crane-two .line.line-three:after {
+    font-size: 1.6rem;
+  }
   .buildings div:nth-of-type(1), .buildings div:nth-of-type(2), .buildings div:nth-of-type(3) {
     display: none;
   }

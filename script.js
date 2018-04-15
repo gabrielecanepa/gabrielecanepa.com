@@ -49,8 +49,10 @@ const mailTip = tippy(mailIcon, {
   interactive: true,
   distance: 20
 });
+let mailTouch = isTouchDevice();
 mailIcon.addEventListener("click", function(event) {
-  if (isTouchDevice()) {
+  if (mailTouch) {
     event.preventDefault();
+    mailTouch = false;
   }
 }, false);
