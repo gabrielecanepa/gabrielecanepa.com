@@ -677,15 +677,15 @@ body {
 /*Responsive width*/
 @media only screen and (max-width: 372px) {
   #content .avatar {
-    width: 60px;
+    width: 70px;
     padding-top: 2rem;
   }
   #content h1 {
-    font-size: 1.6rem;
     display: none;
   }
   #content .social {
-    height: 2.2rem;
+    margin-top: 10px;
+    height: 2.75rem;
   }
   #content .social a {
     color: inherit;
@@ -693,10 +693,7 @@ body {
     margin: 0 0.2rem;
   }
   #content .social i {
-    font-size: 1.8rem;
-  }
-  #content .social #lewagon {
-    font-size: 1.9rem;
+    font-size: 2.2rem;
   }
   .crane-two {
     display: none;
