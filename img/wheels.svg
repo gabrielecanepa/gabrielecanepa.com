@@ -18,7 +18,7 @@
     <animateTransform
       attributeName="transform"
       begin="0s"
-      dur="3s"
+      dur="1.8s"
       type="rotate"
       from="0 31 37"
       to="360 31 37"
@@ -41,7 +41,7 @@
     <animateTransform
       attributeName="transform"
       begin="0s"
-      dur="2s"
+      dur="1.2s"
       type="rotate"
       from="0 78 21"
       to="-360 78 21"
