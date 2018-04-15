@@ -265,7 +265,7 @@ body {
   color: #1572b6;
   left: -2.8px;
   transform: rotate(45deg);
-  -webkit-animation: shakeBlock 10s infinite alternate;
+  -webkit-animation: shakeBlock 11s infinite alternate;
   animation: shakeBlock 10s infinite alternate;
 }
 .crane-three .line.line-three:after {
@@ -383,13 +383,13 @@ body {
   -webkit-animation-delay: 3s;
   animation-delay: 3s;
 }
-.crane-two .cabin,
+/*.crane-two .cabin,
 .crane-two .arm,
 .crane-two .picker,
 .crane-two .weight {
   -webkit-animation-delay: 3s;
   animation-delay: 3s;
-}
+}*/
 .crane-three {
   width: 130px;
   height: 100px;
@@ -402,8 +402,8 @@ body {
   height: 0.5px;
 }
 .crane-three .line-three {
-  -webkit-animation: moveLineThreeSmall 10s ease-in-out infinite alternate;
-  animation: moveLineThreeSmall 10s ease-in-out infinite alternate;
+  -webkit-animation: moveLineThreeSmall 12s ease-in-out infinite alternate;
+  animation: moveLineThreeSmall 12s ease-in-out infinite alternate;
   width: 1px;
   -webkit-animation-delay: 1.5s;
   animation-delay: 1.5s;
@@ -444,6 +444,11 @@ body {
   transform-origin: 80% center;
   -webkit-animation: moveCrane 10s infinite alternate;
   animation: moveCrane 10s infinite alternate;
+}
+.crane-three .arm {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+
 }
 .weight {
   -webkit-transform-origin: 0 center;
