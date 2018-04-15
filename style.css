@@ -675,25 +675,21 @@ body {
     padding-top: 2rem;
   }
   #content h1 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   #content .social {
-    height: 2.5rem;
+    height: 2.2rem;
   }
   #content .social a {
     color: inherit;
     text-decoration: none;
-    margin: 0 0.6rem;
+    margin: 0 0.2rem;
   }
   #content .social i {
-    font-size: 2rem;
-  }
-  #content .social #lewagon-logo {
-    margin-left: 0;
-    margin-right: -0.4rem;
+    font-size: 1.8rem;
   }
   #content .social #lewagon {
-    font-size: 2.1rem;
+    font-size: 1.9rem;
   }
   .crane-two {
     display: none;

@@ -1,3 +1,9 @@
+"use strict";
+
+function isTouchDevice() {
+  return !!('ontouchstart' in window) || !!('msmaxtouchpoints' in window.navigator);
+};
+
 // Avatar tooltip
 const message = document.querySelector('#randomMessage');
 const initialText = message.textContent;
@@ -22,7 +28,6 @@ const avatarTip = tippy('#avatarTooltip', {
     const content = this.querySelector('.tippy-content')
     content.innerHTML = initialText
   },
-  // prevent tooltip from displaying over button
   popperOptions: {
     modifiers: {
       preventOverflow: {
@@ -36,17 +41,16 @@ const avatarTip = tippy('#avatarTooltip', {
 });
 
 // Mail tooltip
-const mailTip = tippy('#mailIcon', {
+const mailIcon = document.getElementById('mailIcon');
+const mailTip = tippy(mailIcon, {
   html: document.querySelector('#mailTooltip'),
   placement: 'right',
   arrow: true,
   interactive: true,
   distance: 20
 });
-const mailIcon = document.getElementById('mailIcon');
-const preventDefault = function(event) {
-  if (document.querySelector('#tippy-2') == null) {
-    mailIcon.preventDefault();
+mailIcon.addEventListener("click", function(event) {
+  if (isTouchDevice()) {
+    event.preventDefault();
   }
-}
-// mailIcon.addEventListener('click', preventDefault, false);
+}, false);
