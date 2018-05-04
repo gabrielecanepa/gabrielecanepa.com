@@ -7,10 +7,6 @@ function isTouchDevice() {
 // Avatar tooltip
 const message = document.querySelector('#randomMessage');
 const initialText = message.textContent;
-// function randomPlacement(items) {
-//   return items[Math.floor(Math.random() * items.length)];
-// }
-// const placements = ['top', 'start-top', 'top-end', 'bottom', 'start-bottom', 'bottom-end', 'left', 'start-left', 'left-end', 'right', 'start-right', 'right-end'];
 const avatarTip = tippy('#avatarTooltip', {
   arrow: true,
   distance: 20,
@@ -39,6 +35,28 @@ const avatarTip = tippy('#avatarTooltip', {
     }
   }
 });
+
+// GitHub tooltip
+GitHubCalendar("#githubCalendar", "gabrielecanepa", {
+  summary_text: " ",
+  responsive: true
+});
+const githubIcon = document.getElementById('githubIcon');
+const githubTip = tippy(githubIcon, {
+  html: document.querySelector('#githubTooltip'),
+  placement: 'left',
+  arrow: true,
+  interactive: true,
+  distance: 20,
+  trigger: 'click'
+});
+let githubTouch = isTouchDevice();
+githubIcon.addEventListener("click", function(event) {
+  if (githubTouch) {
+    event.preventDefault();
+    githubTouch = false;
+  }
+}, false);
 
 // Mail tooltip
 const mailIcon = document.getElementById('mailIcon');
