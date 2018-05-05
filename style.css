@@ -124,7 +124,7 @@ body {
 }
 
 #githubTooltip {
-  max-width: 320px;
+  max-width: 400px;
   text-align: center;
   margin: 0 auto;
 }
@@ -166,9 +166,6 @@ body {
   width: 100%;
   box-sizing: border-box;
   height: 26px;
-}
-#githubTooltip .contrib-column {
-  display: none !important;
 }
 
 #outer-crane-container {

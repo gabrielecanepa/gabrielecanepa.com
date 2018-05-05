@@ -39,6 +39,7 @@ const avatarTip = tippy('#avatarTooltip', {
 // GitHub tooltip
 GitHubCalendar("#githubCalendar", "gabrielecanepa", {
   summary_text: " ",
+  global_stats: false,
   responsive: true
 });
 const githubIcon = document.getElementById('githubIcon');
