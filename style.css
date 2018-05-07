@@ -675,7 +675,7 @@ body {
 }
 
 /*Responsive width*/
-@media only screen and (max-width: 372px) {
+@media only screen and (max-width: 375px) {
   #content .avatar {
     width: 70px;
     padding-top: 2rem;
@@ -708,7 +708,7 @@ body {
     display: none;
   }
 }
-@media only screen and (min-width: 372px) and (max-width: 768px) {
+@media only screen and (min-width: 375px) and (max-width: 768px) {
   #content h1 {
     font-size: 2rem;
   }
