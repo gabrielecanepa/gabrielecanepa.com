@@ -10,7 +10,7 @@ const initialText = message.textContent;
 const avatarTip = tippy('#avatarTooltip', {
   arrow: true,
   distance: 20,
-  placement: 'right', // randomPlacement(placements)
+  placement: 'right',
   inertia: true,
   interactive: true,
   html: '#randomMessage',
