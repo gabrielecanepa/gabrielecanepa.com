@@ -45,11 +45,10 @@ GitHubCalendar("#githubCalendar", "gabrielecanepa", {
 const githubIcon = document.getElementById('githubIcon');
 const githubTip = tippy(githubIcon, {
   html: document.querySelector('#githubTooltip'),
-  placement: 'left',
+  placement: 'bottom',
   arrow: true,
   interactive: true,
   distance: 20,
-  trigger: 'click'
 });
 let githubTouch = isTouchDevice();
 githubIcon.addEventListener("click", function(event) {
