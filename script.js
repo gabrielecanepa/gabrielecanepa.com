@@ -38,26 +38,28 @@ const avatarTip = tippy('#avatarTooltip', {
 });
 
 // GitHub tooltip
-GitHubCalendar("#githubCalendar", "gabrielecanepa", {
-  summary_text: " ",
-  global_stats: false,
-  responsive: true
-});
-const githubIcon = document.getElementById('githubIcon');
-const githubTip = tippy(githubIcon, {
-  html: document.querySelector('#githubTooltip'),
-  placement: 'bottom',
-  arrow: true,
-  interactive: true,
-  distance: 20,
-});
-let githubTouch = isTouchDevice();
-githubIcon.addEventListener("click", function(event) {
-  if (githubTouch) {
-    event.preventDefault();
-    githubTouch = false;
-  }
-}, false);
+if (window.screen.width >= 708) {
+  GitHubCalendar("#githubCalendar", "gabrielecanepa", {
+    summary_text: " ",
+    global_stats: false,
+    responsive: true
+  });
+  const githubIcon = document.getElementById('githubIcon');
+  const githubTip = tippy(githubIcon, {
+    html: document.querySelector('#githubTooltip'),
+    placement: 'bottom',
+    arrow: true,
+    interactive: true,
+    distance: 20,
+  });
+  let githubTouch = isTouchDevice();
+  githubIcon.addEventListener("click", function(event) {
+    if (githubTouch) {
+      event.preventDefault();
+      githubTouch = false;
+    }
+  }, false);
+}
 
 // Mail tooltip
 const mailIcon = document.getElementById('mailIcon');
