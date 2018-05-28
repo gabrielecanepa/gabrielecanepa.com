@@ -50,7 +50,8 @@ if (window.screen.width >= 708) {
     placement: 'bottom',
     arrow: true,
     interactive: true,
-    distance: 20
+    distance: 20,
+    inertia: true
   });
   let githubTouch = isTouchDevice();
   githubIcon.addEventListener("click", function(event) {
@@ -68,7 +69,8 @@ const mailTip = tippy(mailIcon, {
   placement: 'right',
   arrow: true,
   interactive: true,
-  distance: 20
+  distance: 20,
+  inertia: true
 });
 let mailTouch = isTouchDevice();
 mailIcon.addEventListener("click", function(event) {
