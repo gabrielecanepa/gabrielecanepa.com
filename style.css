@@ -506,6 +506,27 @@ body {
   padding: 0.5rem;
   font-family: Ubuntu;
 }
+.tippy-tooltip[data-template-id="#githubTooltip"] {
+  padding: 0.5rem;
+  font-family: Ubuntu;
+}
+.tippy-tooltip[data-template-id="#githubTooltip"] div.float-left.text-gray {
+  display: inline-block;
+  padding-left: 18px;
+  padding-top: 4px;
+}
+.tippy-tooltip[data-template-id="#githubTooltip"] a {
+  color: white;
+  font-weight: bolder;
+  text-decoration: none;
+  transition: 300ms;
+}
+.tippy-tooltip[data-template-id="#githubTooltip"] a:hover {
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+}
+.tippy-tooltip[data-template-id="#githubTooltip"] .contrib-legend {
+  padding-right: 0 !important;
+}
 
 @-webkit-keyframes moveCrane {
   0%, 20% {

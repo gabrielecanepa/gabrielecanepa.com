@@ -40,7 +40,7 @@ const avatarTip = tippy('#avatarTooltip', {
 // GitHub tooltip
 if (window.screen.width >= 708) {
   GitHubCalendar("#githubCalendar", "gabrielecanepa", {
-    summary_text: " ",
+    summary_text: "",
     global_stats: false,
     responsive: true
   });
@@ -50,7 +50,7 @@ if (window.screen.width >= 708) {
     placement: 'bottom',
     arrow: true,
     interactive: true,
-    distance: 20,
+    distance: 20
   });
   let githubTouch = isTouchDevice();
   githubIcon.addEventListener("click", function(event) {
