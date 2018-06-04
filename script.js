@@ -16,7 +16,7 @@ const avatarTip = tippy('#avatarTooltip', {
   placement: 'right',
   flip: true,
   onShow() {
-    const quotes = ['Hello!', '&iexcl;Hola!', 'Ciao!', 'Olá!', 'Oi!'];
+    const quotes = ['Hello!', '&iexcl;Hola!', 'Ciao!', 'Olá!', 'Oi!', 'Bonjour!', 'Hallo!', 'Namastee!', 'Salaam!', 'Salut!'];
     const content = this.querySelector('.tippy-content');
     content.innerHTML = quotes[Math.floor(Math.random() * quotes.length)];
     avatarTip.loading = false;
