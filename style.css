@@ -109,19 +109,19 @@ body {
 #content .social #mail:hover {
   color: #4688F1;
 }
-#content #codepen {
+#content #location {
   position: absolute;
   text-align: right;
-  bottom: 3px;
-  right: 6px;
+  bottom: 2px;
+  right: 20px;
 }
-#content #codepen-logo {
-  width: 16px;
+#content #location-icon {
+  width: 20px;
   cursor: pointer;
   -webkit-transition: filter 300ms ease, margin-top 100ms ease;
   transition: filter 300ms ease, margin-top 100ms ease;
 }
-#content #codepen-logo:hover {
+#content #location-icon:hover {
   filter: invert(100%);
   margin-top: -2px;
 }
@@ -183,7 +183,7 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  box-shadow: inset 0 -60px 0 -30px #FF6347;
+  box-shadow: inset 0 -65px 0 -30px #FF6347;
   z-index: -1;
 }
 .buildings {
@@ -262,7 +262,7 @@ body {
 }
 .crane, .buildings {
   position: absolute;
-  bottom: 0;
+  bottom: 8px;
 }
 .crane div {
   border-radius: 2px;
@@ -270,7 +270,7 @@ body {
 }
 .crane .line {
   border: none;
-  background: #FF6347;
+  background: #DD4125;
   outline: 1px solid transparent;
   z-index: 0;
 }
