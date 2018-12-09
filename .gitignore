@@ -1,6 +1,11 @@
 .DS_Store
-
-local/
-.sass-cache/
-
-laugh.svg
+.env
+.sass-cache
+*.bundle
+*.cache
+*.log
+*.lock
+bin/
+build/
+dist/
+node_modules/

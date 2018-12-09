@@ -1,0 +1,74 @@
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+
+html {
+  background: #EEE;
+}
+body {
+  margin: 0;
+  font-family: "Inconsolata", "DejaVu Sans Mono","Bitstream Vera Sans Mono", monospace;
+  font-size: 1.2em;
+  line-height: 1.2em;
+}
+article, footer {
+  display: block;
+  min-width: 360px;
+  max-width: 900px;
+  width: 80%;
+}
+article {
+  margin: 2.5em auto 0 auto;
+  border: 1px solid;
+  border-color: #ddd #aaa #aaa #ddd;
+  padding: 2em;
+  background: #fff;
+}
+h1 {
+  margin-top: 0;
+  font-weight:normal;
+  display:inline;
+  border-bottom: 1px solid black;
+  padding:0 0 3px 0;
+  line-height: 36px;
+}
+a {
+  text-decoration:none;
+}
+article p:first-of-type {
+  margin-top: 1.6em;
+}
+article p:last-child {
+  margin-bottom: 0;
+}
+footer {
+  margin: 1.2em auto 0.8em auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  max-width: 960px !important;
+}
+footer #logo {
+  width: 38px;
+}
+footer #logo:hover {
+  transform: scale(1.1);
+}
+footer .icon-link {
+  color: #262626;
+}
+footer .icon {
+  font-size: 1.6em;
+  padding: 0 0.25em;
+  text-shadow: 1.2px 1.2px 0 #AAA;
+}
+footer .icon:hover, footer .icon:active {
+  text-shadow: 0 0 1.2px #AAA;
+}
+
+@media all and (max-width: 500px) {
+  body {
+    font-size: 1em;
+  }
+  article {
+    padding:1em;
+  }
+}
