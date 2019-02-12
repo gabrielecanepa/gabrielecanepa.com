@@ -127,10 +127,11 @@ body {
 }
 
 #githubTooltip {
-/*  max-width: 400px;*/
   text-align: center;
   margin: 0 auto;
+  min-height: 0 !important;
 }
+@media (max-width)
 #githubTooltip h2 {
   font-size: 1rem;
   font-weight: bold;
@@ -148,6 +149,7 @@ body {
   padding: 4px 14px 10px 0;
   display: inline-block;
   float: right;
+  opacity: 0;
 }
 #githubTooltip .contrib-legend .legend {
   display: inline-block;
@@ -169,6 +171,21 @@ body {
   width: 100%;
   box-sizing: border-box;
   height: 26px;
+}
+#githubTooltip .float-left {
+  width: 100%;
+  text-align: center;
+  font-size: 8px;
+}
+@media (min-width: 370px) {
+  #githubTooltip .float-left {
+    font-size: 9px;
+  }
+}
+@media (min-width: 500px) {
+  #githubTooltip .float-left {
+    font-size: 11px;
+  }
 }
 
 #outer-crane-container {
