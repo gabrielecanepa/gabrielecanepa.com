@@ -1,8 +1,8 @@
-"use strict";
-
 function isTouchDevice() {
-  return !!('ontouchstart' in window) || !!('msmaxtouchpoints' in window.navigator);
-};
+  return (
+    !!('ontouchstart' in window) || !!('msmaxtouchpoints' in window.navigator)
+  );
+}
 
 // Avatar tooltip
 const message = document.querySelector('#randomMessage');
@@ -16,14 +16,25 @@ const avatarTip = tippy('#avatarTooltip', {
   placement: 'right',
   flip: true,
   onShow() {
-    const quotes = ['Hello!', '&iexcl;Hola!', 'Ciao!', 'Olá!', 'Oi!', 'Bonjour!', 'Hallo!', 'Namastee!', 'Salaam!', 'Salut!'];
+    const quotes = [
+      'Hello!',
+      '&iexcl;Hola!',
+      'Ciao!',
+      'Olá!',
+      'Oi!',
+      'Bonjour!',
+      'Hallo!',
+      'Namastee!',
+      'Salaam!',
+      'Salut!'
+    ];
     const content = this.querySelector('.tippy-content');
     content.innerHTML = quotes[Math.floor(Math.random() * quotes.length)];
     avatarTip.loading = false;
   },
   onHidden() {
-    const content = this.querySelector('.tippy-content')
-    content.innerHTML = initialText
+    const content = this.querySelector('.tippy-content');
+    content.innerHTML = initialText;
   },
   popperOptions: {
     modifiers: {
@@ -39,8 +50,8 @@ const avatarTip = tippy('#avatarTooltip', {
 
 // GitHub tooltip
 if (window.innerWidth >= 708) {
-  GitHubCalendar("#githubTooltip", "gabrielecanepa", {
-    summary_text: "",
+  GitHubCalendar('#githubTooltip', 'gabrielecanepa', {
+    summary_text: '',
     global_stats: false,
     responsive: true
   });
@@ -54,12 +65,16 @@ if (window.innerWidth >= 708) {
     inertia: true
   });
   let githubTouch = isTouchDevice();
-  githubIcon.addEventListener("click", function(event) {
-    if (githubTouch) {
-      event.preventDefault();
-      githubTouch = false;
-    }
-  }, false);
+  githubIcon.addEventListener(
+    'click',
+    function(event) {
+      if (githubTouch) {
+        event.preventDefault();
+        githubTouch = false;
+      }
+    },
+    false
+  );
 }
 
 // Mail tooltip
@@ -73,9 +88,13 @@ const mailTip = tippy(mailIcon, {
   inertia: true
 });
 let mailTouch = isTouchDevice();
-mailIcon.addEventListener("click", function(event) {
-  if (mailTouch) {
-    event.preventDefault();
-    mailTouch = false;
-  }
-}, false);
+mailIcon.addEventListener(
+  'click',
+  function(event) {
+    if (mailTouch) {
+      event.preventDefault();
+      mailTouch = false;
+    }
+  },
+  false
+);
