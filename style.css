@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
 * {
   box-sizing: border-box;
@@ -10,16 +10,18 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
+  overflow: hidden;
 }
-html, body {
+html,
+body {
   height: 100%;
 }
 body {
-  background: -webkit-linear-gradient(bottom, #FFA191, #FFC247);
-  background: linear-gradient(to top, #FFA191, #FFC247);
+  background: -webkit-linear-gradient(bottom, #ffa191, #ffc247);
+  background: linear-gradient(to top, #ffa191, #ffc247);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
 }
 .hidden {
   display: none !important;
@@ -43,7 +45,7 @@ body {
   justify-content: center;
   text-align: center;
   font-family: Ubuntu;
-  color: #FFF;
+  color: #fff;
   padding-bottom: 20vh;
 }
 #content .avatar {
@@ -86,28 +88,28 @@ body {
 }
 #content .social i {
   font-size: 2.5rem;
-  color: #FFF;
+  color: #fff;
   cursor: pointer;
   -webkit-transition: color 300ms ease, margin-top 100ms ease;
   transition: color 300ms ease, margin-top 100ms ease;
 }
 #content .social i:visited {
-  color: #FFF;
+  color: #fff;
 }
 #content .social #github:hover {
-  color: #24292E;
+  color: #24292e;
 }
 #content .social #linkedin:hover {
-  color: #1178B2;
+  color: #1178b2;
 }
 #content .social #lewagon {
   font-size: 2.6rem;
 }
 #content .social #lewagon:hover {
-  color: #D03538;
+  color: #d03538;
 }
 #content .social #mail:hover {
-  color: #4688F1;
+  color: #4688f1;
 }
 #content #location {
   position: absolute;
@@ -131,8 +133,7 @@ body {
   margin: 0 auto;
   min-height: 0 !important;
 }
-@media (max-width)
-#githubTooltip h2 {
+@media (max-width) #githubTooltip h2 {
   font-size: 1rem;
   font-weight: bold;
 }
@@ -140,9 +141,10 @@ body {
   padding: 5px 0 0;
   text-align: center;
 }
-#githubTooltip .calendar-graph text.wday, #githubTooltip .calendar-graph text.month {
+#githubTooltip .calendar-graph text.wday,
+#githubTooltip .calendar-graph text.month {
   font-size: 10px;
-  fill: #AAA;
+  fill: #aaa;
 }
 #githubTooltip .contrib-legend {
   text-align: right;
@@ -200,7 +202,7 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  box-shadow: inset 0 -65px 0 -30px #FF6347;
+  box-shadow: inset 0 -65px 0 -30px #ff6347;
   z-index: -1;
 }
 .buildings {
@@ -211,7 +213,7 @@ body {
 .buildings div {
   height: inherit;
   width: 45px;
-  background: #FF6347;
+  background: #ff6347;
   position: absolute;
   bottom: 10%;
 }
@@ -221,7 +223,8 @@ body {
   height: 60%;
   left: 10%;
   bottom: 30%;
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAGCAYAAAAG5SQMAAAAFElEQVQImWP4////fwYYIJKDEwAAfPsP8eFXG40AAAAASUVORK5CYII=") repeat;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAGCAYAAAAG5SQMAAAAFElEQVQImWP4////fwYYIJKDEwAAfPsP8eFXG40AAAAASUVORK5CYII=')
+    repeat;
   position: absolute;
 }
 .buildings div:nth-of-type(1) {
@@ -277,7 +280,8 @@ body {
   height: 80%;
   left: 25%;
 }
-.crane, .buildings {
+.crane,
+.buildings {
   position: absolute;
   bottom: 8px;
 }
@@ -287,7 +291,7 @@ body {
 }
 .crane .line {
   border: none;
-  background: #DD4125;
+  background: #dd4125;
   outline: 1px solid transparent;
   z-index: 0;
 }
@@ -319,14 +323,14 @@ body {
   animation: shakeBlock 10s infinite alternate;
 }
 .crane-one .line.line-three:after {
-  content: "\e911";
+  content: '\e911';
   color: #f7df1e;
   font-size: 2.2rem;
   left: -6px;
   height: 0.4rem;
 }
 .crane-two .line.line-three:after {
-  content: "\e90b";
+  content: '\e90b';
   color: #1572b6;
   left: -2.8px;
   transform: rotate(45deg);
@@ -334,7 +338,7 @@ body {
   animation: shakeBlock 10s infinite alternate;
 }
 .crane-three .line.line-three:after {
-  content: "\e910";
+  content: '\e910';
   color: #c00;
   width: auto;
   font-size: 1.4rem;
@@ -342,23 +346,22 @@ body {
   transform: rotate(20deg);
   -webkit-animation: shakeBlock 12s infinite alternate;
   animation: shakeBlock 12s infinite alternate;
-
 }
 .stand {
   height: 100%;
   width: 5%;
   right: 25%;
   z-index: 1;
-  background: -webkit-linear-gradient(bottom, #FF6347, #f29b8b);
-  background: linear-gradient(to top, #FF6347, #f29b8b);
+  background: -webkit-linear-gradient(bottom, #ff6347, #f29b8b);
+  background: linear-gradient(to top, #ff6347, #f29b8b);
 }
 .crane-two .stand {
-  background: -webkit-linear-gradient(bottom, #FF6347, #f19483);
-  background: linear-gradient(to top, #FF6347, #f19483);
+  background: -webkit-linear-gradient(bottom, #ff6347, #f19483);
+  background: linear-gradient(to top, #ff6347, #f19483);
 }
 .crane-three .stand {
-  background: -webkit-linear-gradient(bottom, #FF6347, #f08c7b);
-  background: linear-gradient(to top, #FF6347, #f08c7b);
+  background: -webkit-linear-gradient(bottom, #ff6347, #f08c7b);
+  background: linear-gradient(to top, #ff6347, #f08c7b);
   z-index: -1;
 }
 .weight {
@@ -367,13 +370,13 @@ body {
   right: 4%;
   top: 12%;
   z-index: 2;
-  background: #F88F7C;
+  background: #f88f7c;
 }
 .crane-two .weight {
-  background: #F88773;
+  background: #f88773;
 }
 .crane-three .weight {
-  background: #F77F6B;
+  background: #f77f6b;
 }
 .cabin {
   height: 9%;
@@ -421,7 +424,7 @@ body {
   left: 20%;
 }
 .crane-one div {
-  border: solid 1px #FF6347;
+  border: solid 1px #ff6347;
 }
 .crane-one .line {
   height: 1px;
@@ -438,7 +441,7 @@ body {
   z-index: -1;
 }
 .crane-two div {
-  border: solid 1px #FF6347;
+  border: solid 1px #ff6347;
 }
 .crane-two .line {
   height: 0.769230769230769px;
@@ -454,7 +457,7 @@ body {
   left: 60%;
 }
 .crane-three div {
-  border: solid 1px #FF6347;
+  border: solid 1px #ff6347;
 }
 .crane-three .line {
   height: 0.5px;
@@ -506,7 +509,6 @@ body {
 .crane-three .arm {
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
-
 }
 .weight {
   -webkit-transform-origin: 0 center;
@@ -515,241 +517,276 @@ body {
   animation: moveWeight 10s infinite alternate;
 }
 
-.tippy-tooltip[data-template-id="#mailTooltip"] {
+.tippy-tooltip[data-template-id='#mailTooltip'] {
   padding: 1rem;
   font-family: Ubuntu;
 }
-.tippy-tooltip[data-template-id="#randomMessage"] {
+.tippy-tooltip[data-template-id='#randomMessage'] {
   padding: 0.5rem;
   font-family: Ubuntu;
 }
-.tippy-tooltip[data-template-id="#githubTooltip"] {
+.tippy-tooltip[data-template-id='#githubTooltip'] {
   padding: 0.5rem;
   font-family: Ubuntu;
 }
-.tippy-tooltip[data-template-id="#githubTooltip"] div.float-left.text-gray {
+.tippy-tooltip[data-template-id='#githubTooltip'] div.float-left.text-gray {
   display: inline-block;
   padding-left: 18px;
   padding-top: 4px;
 }
-.tippy-tooltip[data-template-id="#githubTooltip"] a {
+.tippy-tooltip[data-template-id='#githubTooltip'] a {
   color: white;
   font-weight: bolder;
   text-decoration: none;
   transition: 300ms;
 }
-.tippy-tooltip[data-template-id="#githubTooltip"] a:hover {
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+.tippy-tooltip[data-template-id='#githubTooltip'] a:hover {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
-.tippy-tooltip[data-template-id="#githubTooltip"] .contrib-legend {
+.tippy-tooltip[data-template-id='#githubTooltip'] .contrib-legend {
   padding-right: 0 !important;
 }
 
 @-webkit-keyframes moveCrane {
-  0%, 20% {
+  0%,
+  20% {
     -webkit-transform: rotateY(0);
-            transform: rotateY(0);
+    transform: rotateY(0);
   }
-  70%, 100% {
+  70%,
+  100% {
     -webkit-transform: rotateY(45deg);
-            transform: rotateY(45deg);
+    transform: rotateY(45deg);
   }
 }
 @keyframes moveCrane {
-  0%, 20% {
+  0%,
+  20% {
     -webkit-transform: rotateY(0);
-            transform: rotateY(0);
+    transform: rotateY(0);
   }
-  70%, 100% {
+  70%,
+  100% {
     -webkit-transform: rotateY(45deg);
-            transform: rotateY(45deg);
+    transform: rotateY(45deg);
   }
 }
 @-webkit-keyframes moveWeight {
-  0%, 20% {
+  0%,
+  20% {
     -webkit-transform: rotateY(0) translateX(0);
-            transform: rotateY(0) translateX(0);
+    transform: rotateY(0) translateX(0);
   }
-  70%, 100% {
+  70%,
+  100% {
     -webkit-transform: rotateY(45deg) translateX(-50%);
-            transform: rotateY(45deg) translateX(-50%);
+    transform: rotateY(45deg) translateX(-50%);
   }
 }
 @keyframes moveWeight {
-  0%, 20% {
+  0%,
+  20% {
     -webkit-transform: rotateY(0) translateX(0);
-            transform: rotateY(0) translateX(0);
+    transform: rotateY(0) translateX(0);
   }
-  70%, 100% {
+  70%,
+  100% {
     -webkit-transform: rotateY(45deg) translateX(-50%);
-            transform: rotateY(45deg) translateX(-50%);
+    transform: rotateY(45deg) translateX(-50%);
   }
 }
 @-webkit-keyframes moveLineOne {
-  0%, 20% {
+  0%,
+  20% {
     -webkit-transform: rotateY(0) rotateZ(-10deg);
-            transform: rotateY(0) rotateZ(-10deg);
+    transform: rotateY(0) rotateZ(-10deg);
   }
-  70%, 100% {
+  70%,
+  100% {
     -webkit-transform: rotateY(45deg) rotateZ(-10deg);
-            transform: rotateY(45deg) rotateZ(-10deg);
+    transform: rotateY(45deg) rotateZ(-10deg);
   }
 }
 @keyframes moveLineOne {
-  0%, 20% {
+  0%,
+  20% {
     -webkit-transform: rotateY(0) rotateZ(-10deg);
-            transform: rotateY(0) rotateZ(-10deg);
+    transform: rotateY(0) rotateZ(-10deg);
   }
-  70%, 100% {
+  70%,
+  100% {
     -webkit-transform: rotateY(45deg) rotateZ(-10deg);
-            transform: rotateY(45deg) rotateZ(-10deg);
+    transform: rotateY(45deg) rotateZ(-10deg);
   }
 }
 @-webkit-keyframes moveLineTwo {
-  0%, 20% {
+  0%,
+  20% {
     -webkit-transform: rotateY(0) rotateZ(29deg);
-            transform: rotateY(0) rotateZ(29deg);
+    transform: rotateY(0) rotateZ(29deg);
   }
-  70%, 100% {
+  70%,
+  100% {
     -webkit-transform: rotateY(15deg) rotateZ(29deg);
-            transform: rotateY(15deg) rotateZ(29deg);
+    transform: rotateY(15deg) rotateZ(29deg);
   }
 }
 @keyframes moveLineTwo {
-  0%, 20% {
+  0%,
+  20% {
     -webkit-transform: rotateY(0) rotateZ(29deg);
-            transform: rotateY(0) rotateZ(29deg);
+    transform: rotateY(0) rotateZ(29deg);
   }
-  70%, 100% {
+  70%,
+  100% {
     -webkit-transform: rotateY(15deg) rotateZ(29deg);
-            transform: rotateY(15deg) rotateZ(29deg);
+    transform: rotateY(15deg) rotateZ(29deg);
   }
 }
 @-webkit-keyframes moveLineThree {
   0% {
     -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
+    transform: translate(0, 0);
   }
   20% {
     -webkit-transform: translate(2500%, -18%);
-            transform: translate(2500%, -18%);
+    transform: translate(2500%, -18%);
   }
   60% {
     -webkit-transform: translate(11000%, -25%);
-            transform: translate(11000%, -25%);
+    transform: translate(11000%, -25%);
   }
   70% {
     -webkit-transform: translate(9100%, -25%);
-            transform: translate(9100%, -25%);
+    transform: translate(9100%, -25%);
     height: 30%;
   }
-  90%, 100% {
+  90%,
+  100% {
     -webkit-transform: translate(9100%, -15%);
-            transform: translate(9100%, -15%);
+    transform: translate(9100%, -15%);
     height: 80%;
   }
 }
 @keyframes moveLineThree {
   0% {
     -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
+    transform: translate(0, 0);
   }
   20% {
     -webkit-transform: translate(2500%, -18%);
-            transform: translate(2500%, -18%);
+    transform: translate(2500%, -18%);
     height: 10%;
   }
   60% {
     -webkit-transform: translate(11000%, -25%);
-            transform: translate(11000%, -25%);
+    transform: translate(11000%, -25%);
   }
   70% {
     -webkit-transform: translate(9100%, -25%);
-            transform: translate(9100%, -25%);
+    transform: translate(9100%, -25%);
     height: 25%;
   }
-  90%, 100% {
+  90%,
+  100% {
     -webkit-transform: translate(9100%, -15%);
-            transform: translate(9100%, -15%);
+    transform: translate(9100%, -15%);
     height: 55%;
   }
 }
 @-webkit-keyframes moveLineThreeSmall {
   0% {
     -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
+    transform: translate(0, 0);
   }
   20% {
     -webkit-transform: translate(2500%, -18%);
-            transform: translate(2500%, -18%);
+    transform: translate(2500%, -18%);
     height: 15%;
   }
   60% {
     -webkit-transform: translate(5000%, -25%);
-            transform: translate(5000%, -25%);
+    transform: translate(5000%, -25%);
   }
   70% {
     -webkit-transform: translate(6000%, -25%);
-            transform: translate(6000%, -25%);
+    transform: translate(6000%, -25%);
     height: 30%;
   }
-  90%, 100% {
+  90%,
+  100% {
     -webkit-transform: translate(7000%, 0);
-            transform: translate(7000%, 0);
+    transform: translate(7000%, 0);
     height: 60%;
   }
 }
 @keyframes moveLineThreeSmall {
   0% {
     -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
+    transform: translate(0, 0);
   }
   20% {
     -webkit-transform: translate(2500%, -18%);
-            transform: translate(2500%, -18%);
+    transform: translate(2500%, -18%);
     height: 15%;
   }
   60% {
     -webkit-transform: translate(5000%, -25%);
-            transform: translate(5000%, -25%);
+    transform: translate(5000%, -25%);
   }
   70% {
     -webkit-transform: translate(6000%, -25%);
-            transform: translate(6000%, -25%);
+    transform: translate(6000%, -25%);
     height: 30%;
   }
-  90%, 100% {
+  90%,
+  100% {
     -webkit-transform: translate(7000%, 0);
-            transform: translate(7000%, 0);
+    transform: translate(7000%, 0);
     height: 60%;
   }
 }
 @-webkit-keyframes shakeBlock {
-  from, to {
+  from,
+  to {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
-  10%, 30%, 50%, 70%, 90% {
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
     -webkit-transform: translate3d(-2px, 0, 0);
-            transform: translate3d(-2px, 0, 0);
+    transform: translate3d(-2px, 0, 0);
   }
-  20%, 40%, 60%, 80% {
+  20%,
+  40%,
+  60%,
+  80% {
     -webkit-transform: translate3d(2px, 0, 0);
-            transform: translate3d(2px, 0, 0);
+    transform: translate3d(2px, 0, 0);
   }
 }
 @keyframes shakeBlock {
-  from, to {
+  from,
+  to {
     -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
     transform: translate3d(0, 0, 0) rotate(45deg);
   }
-  10%, 30%, 50%, 70% {
+  10%,
+  30%,
+  50%,
+  70% {
     -webkit-transform: translate3d(-2px, 0, 0) rotate(30deg);
-            transform: translate3d(-2px, 0, 0) rotate(30deg);
+    transform: translate3d(-2px, 0, 0) rotate(30deg);
   }
-  20%, 40%, 60%, 80% {
+  20%,
+  40%,
+  60%,
+  80% {
     -webkit-transform: translate3d(2px, 0, 0) rotate(60deg);
-            transform: translate3d(2px, 0, 0) rotate(60deg);
+    transform: translate3d(2px, 0, 0) rotate(60deg);
   }
 }
 
@@ -783,7 +820,9 @@ body {
   .crane-two .line.line-three:after {
     font-size: 1.6rem;
   }
-  .buildings div:nth-of-type(1), .buildings div:nth-of-type(2), .buildings div:nth-of-type(3) {
+  .buildings div:nth-of-type(1),
+  .buildings div:nth-of-type(2),
+  .buildings div:nth-of-type(3) {
     display: none;
   }
 }
@@ -800,13 +839,15 @@ body {
   .crane-two {
     display: none;
   }
-  .buildings div:nth-of-type(1), .buildings div:nth-of-type(2) {
+  .buildings div:nth-of-type(1),
+  .buildings div:nth-of-type(2) {
     display: none;
   }
 }
 /*Responsive height*/
 @media only screen and (max-height: 350px) {
-  #content .avatar, #content h1  {
+  #content .avatar,
+  #content h1 {
     display: none;
   }
 }
