@@ -4,51 +4,6 @@ function isTouchDevice() {
   );
 }
 
-// Avatar tooltip
-const message = document.querySelector('#randomMessage');
-const initialText = message.textContent;
-const avatarTip = tippy('#avatarTooltip', {
-  arrow: true,
-  distance: 20,
-  inertia: true,
-  interactive: true,
-  html: '#randomMessage',
-  placement: 'right',
-  flip: true,
-  onShow() {
-    const quotes = [
-      'Hello!',
-      '&iexcl;Hola!',
-      'Ciao!',
-      'Olá!',
-      'Oi!',
-      'Bonjour!',
-      'Hallo!',
-      'Namastee!',
-      'Salaam!',
-      'Salut!'
-    ];
-    const content = this.querySelector('.tippy-content');
-    content.innerHTML = quotes[Math.floor(Math.random() * quotes.length)];
-    avatarTip.loading = false;
-  },
-  onHidden() {
-    const content = this.querySelector('.tippy-content');
-    content.innerHTML = initialText;
-  },
-  popperOptions: {
-    modifiers: {
-      preventOverflow: {
-        enabled: false
-      },
-      hide: {
-        enabled: false
-      }
-    }
-  }
-});
-
-// GitHub tooltip
 if (window.innerWidth >= 708) {
   GitHubCalendar('#githubTooltip', 'gabrielecanepa', {
     summary_text: '',
@@ -64,37 +19,11 @@ if (window.innerWidth >= 708) {
     distance: 20,
     inertia: true
   });
-  let githubTouch = isTouchDevice();
   githubIcon.addEventListener(
     'click',
     function(event) {
-      if (githubTouch) {
-        event.preventDefault();
-        githubTouch = false;
-      }
+      isTouchDevice() && event.preventDefault();
     },
     false
   );
 }
-
-// Mail tooltip
-const mailIcon = document.getElementById('mailIcon');
-const mailTip = tippy(mailIcon, {
-  html: document.querySelector('#mailTooltip'),
-  placement: 'right',
-  arrow: true,
-  interactive: true,
-  distance: 20,
-  inertia: true
-});
-let mailTouch = isTouchDevice();
-mailIcon.addEventListener(
-  'click',
-  function(event) {
-    if (mailTouch) {
-      event.preventDefault();
-      mailTouch = false;
-    }
-  },
-  false
-);
