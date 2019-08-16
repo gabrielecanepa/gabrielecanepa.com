@@ -1,8 +1,4 @@
-function isTouchDevice() {
-  return (
-    !!('ontouchstart' in window) || !!('msmaxtouchpoints' in window.navigator)
-  );
-}
+const isTouchDevice = () => !!('ontouchstart' in window) || !!('msmaxtouchpoints' in window.navigator);
 
 if (window.innerWidth >= 708) {
   GitHubCalendar('#githubTooltip', 'gabrielecanepa', {
@@ -10,6 +6,7 @@ if (window.innerWidth >= 708) {
     global_stats: false,
     responsive: true
   });
+
   const githubIcon = document.getElementById('githubIcon');
   const githubTip = tippy(githubIcon, {
     html: document.querySelector('#githubTooltip'),
@@ -19,11 +16,10 @@ if (window.innerWidth >= 708) {
     distance: 20,
     inertia: true
   });
+
   githubIcon.addEventListener(
     'click',
-    function(event) {
-      isTouchDevice() && event.preventDefault();
-    },
+    event => isTouchDevice() && event.preventDefault(),
     false
   );
 }
