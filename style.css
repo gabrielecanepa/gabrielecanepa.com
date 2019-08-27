@@ -331,16 +331,16 @@ body {
   height: 0.4rem;
 }
 .crane-two .line.line-three:after {
-  content: '\e90b';
-  color: #1572b6;
+  content: '\e90a';
+  color: #61dafb;
   left: -2.8px;
   transform: rotate(45deg);
   -webkit-animation: shakeBlock 11s infinite alternate;
   animation: shakeBlock 10s infinite alternate;
 }
 .crane-three .line.line-three:after {
-  content: '\e910';
-  color: #c00;
+  content: '\e90b';
+  color: #1572b6;
   width: auto;
   font-size: 1.4rem;
   left: -2.8px;
