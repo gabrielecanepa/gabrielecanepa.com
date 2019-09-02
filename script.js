@@ -1,13 +1,13 @@
-const isTouchDevice = () => !!('ontouchstart' in window) || !!('msmaxtouchpoints' in window.navigator);
+const isTouchDevice = () => !!('ontouchstart' in window) || !!('msmaxtouchpoints' in window.navigator)
 
 if (window.innerWidth >= 708) {
   GitHubCalendar('#githubTooltip', 'gabrielecanepa', {
     summary_text: '',
     global_stats: false,
     responsive: true
-  });
+  })
 
-  const githubIcon = document.getElementById('githubIcon');
+  const githubIcon = document.getElementById('githubIcon')
   const githubTip = tippy(githubIcon, {
     html: document.querySelector('#githubTooltip'),
     placement: 'bottom',
@@ -15,11 +15,11 @@ if (window.innerWidth >= 708) {
     interactive: true,
     distance: 20,
     inertia: true
-  });
+  })
 
   githubIcon.addEventListener(
     'click',
     event => isTouchDevice() && event.preventDefault(),
     false
-  );
+  )
 }
