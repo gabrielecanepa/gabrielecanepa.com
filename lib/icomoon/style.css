@@ -73,7 +73,7 @@ i, .icomoon-liga {
   content: "\e90c";
   color: #e34f26;
 }
-.icomoon-github:before {
+.icomoon-github2:before {
   content: "\e90d";
 }
 .icomoon-git:before {
@@ -104,7 +104,7 @@ i, .icomoon-liga {
 .icomoon-terminal:before {
   content: "\ea81";
 }
-.icomoon-github2:before {
+.icomoon-github:before {
   content: "\eab0";
 }
 .icomoon-linkedin:before {

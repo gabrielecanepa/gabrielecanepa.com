@@ -129,32 +129,32 @@ body {
   margin-top: -2px;
 }
 
-#githubTooltip {
+#github-tooltip {
   text-align: center;
   margin: 0 auto;
   min-height: 0 !important;
 }
-@media (max-width) #githubTooltip h2 {
+@media (max-width) #github-tooltip h2 {
   font-size: 1rem;
   font-weight: bold;
 }
-#githubTooltip .calendar-graph {
+#github-tooltip .calendar-graph {
   padding: 5px 0 0;
   text-align: center;
 }
-#githubTooltip .calendar-graph text.wday,
-#githubTooltip .calendar-graph text.month {
+#github-tooltip .calendar-graph text.wday,
+#github-tooltip .calendar-graph text.month {
   font-size: 10px;
   fill: #aaa;
 }
-#githubTooltip .contrib-legend {
+#github-tooltip .contrib-legend {
   text-align: right;
   padding: 4px 14px 10px 0;
   display: inline-block;
   float: right;
   opacity: 0;
 }
-#githubTooltip .contrib-legend .legend {
+#github-tooltip .contrib-legend .legend {
   display: inline-block;
   list-style: none;
   margin: 0 5px;
@@ -162,12 +162,12 @@ body {
   bottom: -1px;
   padding: 0;
 }
-#githubTooltip .contrib-legend .legend li {
+#github-tooltip .contrib-legend .legend li {
   display: inline-block;
   width: 10px;
   height: 10px;
 }
-#githubTooltip .contrib-footer {
+#github-tooltip .contrib-footer {
   font-size: 11px;
   padding: 0 10px 12px;
   text-align: left;
@@ -175,18 +175,18 @@ body {
   box-sizing: border-box;
   height: 26px;
 }
-#githubTooltip .float-left {
+#github-tooltip .float-left {
   width: 100%;
   text-align: center;
   font-size: 8px;
 }
 @media (min-width: 370px) {
-  #githubTooltip .float-left {
+  #github-tooltip .float-left {
     font-size: 9px;
   }
 }
 @media (min-width: 500px) {
-  #githubTooltip .float-left {
+  #github-tooltip .float-left {
     font-size: 11px;
   }
 }
@@ -526,25 +526,25 @@ body {
   padding: 0.5rem;
   font-family: Ubuntu;
 }
-.tippy-tooltip[data-template-id='#githubTooltip'] {
+.tippy-tooltip[data-template-id='#github-tooltip'] {
   padding: 0.5rem;
   font-family: Ubuntu;
 }
-.tippy-tooltip[data-template-id='#githubTooltip'] div.float-left.text-gray {
+.tippy-tooltip[data-template-id='#github-tooltip'] div.float-left.text-gray {
   display: inline-block;
   padding-left: 18px;
   padding-top: 4px;
 }
-.tippy-tooltip[data-template-id='#githubTooltip'] a {
+.tippy-tooltip[data-template-id='#github-tooltip'] a {
   color: white;
   font-weight: bolder;
   text-decoration: none;
   transition: 300ms;
 }
-.tippy-tooltip[data-template-id='#githubTooltip'] a:hover {
+.tippy-tooltip[data-template-id='#github-tooltip'] a:hover {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
-.tippy-tooltip[data-template-id='#githubTooltip'] .contrib-legend {
+.tippy-tooltip[data-template-id='#github-tooltip'] .contrib-legend {
   padding-right: 0 !important;
 }
 
