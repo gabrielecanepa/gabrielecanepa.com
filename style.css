@@ -143,7 +143,6 @@ body {
   text-align: right;
   padding: 4px 14px 10px 0;
   display: inline-block;
-  float: right;
   opacity: 0;
 }
 #github-tooltip .contrib-legend .legend {
