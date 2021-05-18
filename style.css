@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
 /* General rules */
 * {
@@ -129,85 +129,60 @@ body {
   text-align: center;
   margin: 0 auto;
   min-height: 0 !important;
+  padding: 0.2rem;
 }
-#github-tooltip .calendar-graph {
+#github-tooltip .js-calendar-graph {
+  min-width: 600px;
   padding: 5px 0 0;
   text-align: center;
 }
-#github-tooltip .calendar-graph text.wday,
-#github-tooltip .calendar-graph text.month {
-  font-size: 10px;
+#github-tooltip .js-calendar-graph .ContributionCalendar-label {
   fill: #aaa;
 }
-#github-tooltip .contrib-legend {
-  text-align: right;
-  padding: 4px 14px 10px 0;
-  display: inline-block;
-  opacity: 0;
+#github-tooltip .width-full {
+  font-size: 12px;
+  padding-bottom: 4px;
 }
-#github-tooltip .contrib-legend .legend {
-  display: inline-block;
-  list-style: none;
-  margin: 0 5px;
-  position: relative;
-  bottom: -1px;
-  padding: 0;
+#github-tooltip .width-full svg {
+  height: 100%;
 }
-#github-tooltip .contrib-legend .legend li {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
+#github-tooltip .width-full svg:first-child {
+  margin-left: 4px;
 }
-#github-tooltip .contrib-footer {
-  font-size: 11px;
-  padding: 0 10px 12px;
-  text-align: left;
-  width: 100%;
-  box-sizing: border-box;
-  height: 26px;
+#github-tooltip .width-full svg:last-child {
+  margin-right: 4px;
 }
-#github-tooltip .float-left {
-  width: 100%;
-  text-align: center;
-  font-size: 8px;
+#github-tooltip .width-full a {
+  display: none;
 }
-@media (min-width: 370px) {
-  #github-tooltip .float-left {
-    font-size: 9px;
-  }
-}
-@media (min-width: 500px) {
-  #github-tooltip .float-left {
-    font-size: 11px;
-  }
-}
-.tippy-tooltip[data-template-id="#mailTooltip"] {
+
+.tippy-tooltip[data-template-id='#mailTooltip'] {
   padding: 1rem;
   font-family: Ubuntu;
 }
-.tippy-tooltip[data-template-id="#randomMessage"] {
+.tippy-tooltip[data-template-id='#randomMessage'] {
   padding: 0.5rem;
   font-family: Ubuntu;
 }
-.tippy-tooltip[data-template-id="#github-tooltip"] {
+.tippy-tooltip[data-template-id='#github-tooltip'] {
   padding: 0.5rem;
   font-family: Ubuntu;
 }
-.tippy-tooltip[data-template-id="#github-tooltip"] div.float-left.text-gray {
+.tippy-tooltip[data-template-id='#github-tooltip'] div.float-left.text-gray {
   display: inline-block;
   padding-left: 18px;
   padding-top: 4px;
 }
-.tippy-tooltip[data-template-id="#github-tooltip"] a {
+.tippy-tooltip[data-template-id='#github-tooltip'] a {
   color: white;
   font-weight: bolder;
   text-decoration: none;
   transition: 300ms;
 }
-.tippy-tooltip[data-template-id="#github-tooltip"] a:hover {
+.tippy-tooltip[data-template-id='#github-tooltip'] a:hover {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
-.tippy-tooltip[data-template-id="#github-tooltip"] .contrib-legend {
+.tippy-tooltip[data-template-id='#github-tooltip'] .contrib-legend {
   padding-right: 0 !important;
 }
 
@@ -240,12 +215,12 @@ body {
   bottom: 10%;
 }
 .buildings div:after {
-  content: "";
+  content: '';
   width: 80%;
   height: 60%;
   left: 10%;
   bottom: 30%;
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAGCAYAAAAG5SQMAAAAFElEQVQImWP4////fwYYIJKDEwAAfPsP8eFXG40AAAAASUVORK5CYII=")
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAGCAYAAAAG5SQMAAAAFElEQVQImWP4////fwYYIJKDEwAAfPsP8eFXG40AAAAASUVORK5CYII=')
     repeat;
   position: absolute;
 }
@@ -332,7 +307,7 @@ body {
   left: 9%;
 }
 .crane .line.line-three:after {
-  font-family: "icomoon" !important;
+  font-family: 'icomoon' !important;
   position: absolute;
   display: block;
   bottom: 0;
@@ -343,14 +318,14 @@ body {
   animation: shakeBlock 10s infinite alternate;
 }
 .crane-one .line.line-three:after {
-  content: "\e911";
+  content: '\e911';
   color: #f7df1e;
   font-size: 2.2rem;
   left: -6px;
   height: 0.4rem;
 }
 .crane-two .line.line-three:after {
-  content: "\e910";
+  content: '\e910';
   color: #cc342d;
   font-size: 1.75rem;
   left: -2.8px;
@@ -358,7 +333,7 @@ body {
   animation: shakeBlock 10s infinite alternate;
 }
 .crane-three .line.line-three:after {
-  content: "\e90b";
+  content: '\e90b';
   color: #1572b6;
   width: auto;
   font-size: 1.4rem;
@@ -403,7 +378,7 @@ body {
   background: #f88f7c;
 }
 .cabin:after {
-  content: "";
+  content: '';
   position: absolute;
   height: 10%;
   width: 100%;
