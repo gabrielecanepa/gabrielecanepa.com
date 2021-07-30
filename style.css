@@ -8,6 +8,7 @@
   outline: none !important;
 }
 html {
+  background-color: #fd644e;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
@@ -200,7 +201,7 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   box-shadow: inset 0 -65px 0 -30px #ff6347;
-  z-index: -1;
+  z-index: 0;
 }
 .buildings {
   height: 90px;
