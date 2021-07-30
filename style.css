@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
 
 /* General rules */
 * {
@@ -157,33 +157,33 @@ body {
   display: none;
 }
 
-.tippy-tooltip[data-template-id='#mailTooltip'] {
+.tippy-tooltip[data-template-id="#mailTooltip"] {
   padding: 1rem;
   font-family: Ubuntu;
 }
-.tippy-tooltip[data-template-id='#randomMessage'] {
+.tippy-tooltip[data-template-id="#randomMessage"] {
   padding: 0.5rem;
   font-family: Ubuntu;
 }
-.tippy-tooltip[data-template-id='#github-tooltip'] {
+.tippy-tooltip[data-template-id="#github-tooltip"] {
   padding: 0.5rem;
   font-family: Ubuntu;
 }
-.tippy-tooltip[data-template-id='#github-tooltip'] div.float-left.text-gray {
+.tippy-tooltip[data-template-id="#github-tooltip"] div.float-left.text-gray {
   display: inline-block;
   padding-left: 18px;
   padding-top: 4px;
 }
-.tippy-tooltip[data-template-id='#github-tooltip'] a {
+.tippy-tooltip[data-template-id="#github-tooltip"] a {
   color: white;
   font-weight: bolder;
   text-decoration: none;
   transition: 300ms;
 }
-.tippy-tooltip[data-template-id='#github-tooltip'] a:hover {
+.tippy-tooltip[data-template-id="#github-tooltip"] a:hover {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
-.tippy-tooltip[data-template-id='#github-tooltip'] .contrib-legend {
+.tippy-tooltip[data-template-id="#github-tooltip"] .contrib-legend {
   padding-right: 0 !important;
 }
 
@@ -216,12 +216,12 @@ body {
   bottom: 10%;
 }
 .buildings div:after {
-  content: '';
+  content: "";
   width: 80%;
   height: 60%;
   left: 10%;
   bottom: 30%;
-  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAGCAYAAAAG5SQMAAAAFElEQVQImWP4////fwYYIJKDEwAAfPsP8eFXG40AAAAASUVORK5CYII=')
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAGCAYAAAAG5SQMAAAAFElEQVQImWP4////fwYYIJKDEwAAfPsP8eFXG40AAAAASUVORK5CYII=")
     repeat;
   position: absolute;
 }
@@ -308,7 +308,7 @@ body {
   left: 9%;
 }
 .crane .line.line-three:after {
-  font-family: 'icomoon' !important;
+  font-family: "icomoon" !important;
   position: absolute;
   display: block;
   bottom: 0;
@@ -319,14 +319,14 @@ body {
   animation: shakeBlock 10s infinite alternate;
 }
 .crane-one .line.line-three:after {
-  content: '\e911';
+  content: "\e911";
   color: #f7df1e;
   font-size: 2.2rem;
   left: -6px;
   height: 0.4rem;
 }
 .crane-two .line.line-three:after {
-  content: '\e910';
+  content: "\e910";
   color: #cc342d;
   font-size: 1.75rem;
   left: -2.8px;
@@ -334,7 +334,7 @@ body {
   animation: shakeBlock 10s infinite alternate;
 }
 .crane-three .line.line-three:after {
-  content: '\e90b';
+  content: "\e90b";
   color: #1572b6;
   width: auto;
   font-size: 1.4rem;
@@ -379,7 +379,7 @@ body {
   background: #f88f7c;
 }
 .cabin:after {
-  content: '';
+  content: "";
   position: absolute;
   height: 10%;
   width: 100%;
