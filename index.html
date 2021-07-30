@@ -27,7 +27,7 @@
     <!-- Open graph -->
     <meta property="og:url" content="https://gabrielecanepa.com">
     <meta property="og:title" content="@gabrielecanepa">
-    <meta property="og:description" content="Personal website of Gabriele Canepa, software developer and teacher.">
+    <meta property="og:description" content="Personal website of Gabriele Canepa, software engineer and teacher.">
     <meta property="og:image" content="https://gabrielecanepa.com/social/og.png">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_US">
@@ -99,6 +99,8 @@
     <script src="https://unpkg.com/github-calendar@2.2.7/dist/github-calendar.min.js"></script>
     <script>
       var githubIcon = document.getElementById('github-icon');
+      var githubTootlip = document.getElementById('github-tooltip');
+      var tippyTooltip = document.getElementById('tippy-1');
       if (window.innerWidth >= 708) {
         GitHubCalendar('#github-tooltip', 'gabrielecanepa', {
           global_stats: false,
@@ -112,12 +114,22 @@
           distance: 20,
           inertia: true,
         });
-        githubIcon.addEventListener('click', function(event) { 
-          if (!!('ontouchstart' in window) || !!('msmaxtouchpoints' in window.navigator)) {
-            event.preventDefault();
-          }
-        });
+      } else {
+        githubTootlip.style.display = 'none';
       }
+      var isTouch = !!('ontouchstart' in window) || !!('msmaxtouchpoints' in window.navigator);
+      var isTooltipOpen = false;
+      githubIcon.addEventListener('click', function (e) {
+        if (isTouch && !isTooltipOpen) {
+          e.preventDefault();
+          isTooltipOpen = true;
+        }
+      });
+      document.body.addEventListener('click', function (e) {
+        if (isTooltipOpen && !/github|tippy/.test(e.target.id)) {
+          isTooltipOpen = false;
+        }
+      });
     </script>
   </body>
 </html>
