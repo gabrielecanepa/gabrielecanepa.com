@@ -90,7 +90,8 @@ body {
 #content .socials #github {
   margin-top: 4px;
 }
-#content .socials #github:hover {
+#content .socials #github:hover,
+#content .socials #github-icon.tippy-active #github {
   color: #24292e;
   margin-top: 4px;
 }
