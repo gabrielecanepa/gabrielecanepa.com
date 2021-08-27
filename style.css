@@ -41,7 +41,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-family: Ubuntu;
+  font-family: Ubuntu, sans-serif;
   color: #fff;
   padding-bottom: 20vh;
 }
@@ -161,15 +161,15 @@ body {
 
 .tippy-tooltip[data-template-id="#mailTooltip"] {
   padding: 1rem;
-  font-family: Ubuntu;
+  font-family: Ubuntu, sans-serif;
 }
 .tippy-tooltip[data-template-id="#randomMessage"] {
   padding: 0.5rem;
-  font-family: Ubuntu;
+  font-family: Ubuntu, sans-serif;
 }
 .tippy-tooltip[data-template-id="#github-tooltip"] {
   padding: 0.5rem;
-  font-family: Ubuntu;
+  font-family: Ubuntu, sans-serif;
 }
 .tippy-tooltip[data-template-id="#github-tooltip"] div.float-left.text-gray {
   display: inline-block;
