@@ -9,6 +9,7 @@
 }
 html {
   background-color: #fd644e;
+  background: linear-gradient(to top, #ffa191, #ffc247);
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
