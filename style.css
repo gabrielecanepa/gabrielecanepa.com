@@ -76,34 +76,25 @@ body {
 }
 #content .socials #github:hover,
 #content .socials #github-icon.tippy-active #github {
-  color: #24292e;
+  color: #24292e !important;
 }
 #content .socials #linkedin:hover {
-  color: #2977ca;
-}
-#content .socials #lewagon {
-  font-size: 2.7rem;
-  margin: 12px -10px 0 -4px;
+  color: #2977ca !important;
 }
 #content .socials #lewagon:hover {
-  color: #fd1015;
+  color: #fd1015 !important;
 }
 #content .socials #algolia {
   height: 40px;
 }
 #content .socials #algolia #algolia--gradient {
-  opacity: 0;
   transition: opacity 300ms ease;
 }
 #content .socials #algolia:hover #algolia--gradient {
-  opacity: 1;
-}
-#content .socials #mail {
-  font-size: 2.6rem;
-  margin-top: 9px;
+  opacity: 1 !important;
 }
 #content .socials #mail:hover {
-  color: #4688f1;
+  color: #4688f1 !important;
 }
 
 /* Github tooltip */
