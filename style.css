@@ -26,6 +26,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  font-family: Ubuntu, sans-serif;
 }
 .hidden {
   display: none !important;
@@ -46,20 +47,6 @@ body {
   color: #fff;
   padding-bottom: 20vh;
 }
-#content .avatar {
-  width: 85px;
-  margin-bottom: 1rem;
-}
-#content .avatar:hover {
-  cursor: none;
-}
-#content #wheels {
-  width: 200px;
-}
-#content h1 {
-  padding: 0.4rem 0;
-  font-size: 2.8rem;
-}
 #content .socials {
   text-align: center;
   overflow: hidden;
@@ -70,62 +57,53 @@ body {
   z-index: 1;
 }
 #content .socials a {
-  color: inherit;
-  display: inline-block;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0 0.5rem;
   text-decoration: none;
 }
-#content .socials-padding {
-  align-self: flex-end;
-}
 #content .socials i {
   font-size: 2.5rem;
-  color: #fff;
+  color: #ffffff;
   cursor: pointer;
   display: inline-block;
   transition: color 300ms ease, margin-top 100ms ease;
 }
 #content .socials i:visited {
-  color: #fff;
-}
-#content .socials #github {
-  margin-top: 4px;
+  color: #ffffff;
 }
 #content .socials #github:hover,
 #content .socials #github-icon.tippy-active #github {
   color: #24292e;
-  margin-top: 4px;
 }
 #content .socials #linkedin:hover {
   color: #2977ca;
 }
 #content .socials #lewagon {
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   margin: 12px -10px 0 -4px;
 }
 #content .socials #lewagon:hover {
   color: #fd1015;
 }
+#content .socials #algolia {
+  height: 40px;
+}
+#content .socials #algolia #algolia--gradient {
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+#content .socials #algolia:hover #algolia--gradient {
+  opacity: 1;
+}
 #content .socials #mail {
-  margin-top: 8.25px;
+  font-size: 2.6rem;
+  margin-top: 9px;
 }
 #content .socials #mail:hover {
   color: #4688f1;
-}
-#content #location {
-  position: absolute;
-  text-align: right;
-  bottom: 2px;
-  right: 20px;
-}
-#content #location-icon {
-  width: 20px;
-  cursor: pointer;
-  transition: filter 300ms ease, margin-top 100ms ease;
-}
-#content #location-icon:hover {
-  filter: invert(100%);
-  margin-top: -2px;
 }
 
 /* Github tooltip */
@@ -139,6 +117,7 @@ body {
   min-width: 600px;
   padding: 5px 0 0;
   text-align: center;
+  pointer-events: none;
 }
 #github-tooltip .js-calendar-graph .ContributionCalendar-label {
   fill: #aaa;
@@ -156,21 +135,18 @@ body {
 #github-tooltip .width-full svg:last-child {
   margin-right: 4px;
 }
-#github-tooltip .width-full a {
+#github-tooltip .js-calendar-graph .width-full:nth-child(2) .float-left {
+  display: none;
+}
+#github-tooltip .js-calendar-graph .width-full:not(:nth-child(2)) {
   display: none;
 }
 
-.tippy-tooltip[data-template-id="#mailTooltip"] {
-  padding: 1rem;
-  font-family: Ubuntu, sans-serif;
-}
-.tippy-tooltip[data-template-id="#randomMessage"] {
-  padding: 0.5rem;
+.tippy-tooltip {
   font-family: Ubuntu, sans-serif;
 }
 .tippy-tooltip[data-template-id="#github-tooltip"] {
   padding: 0.5rem;
-  font-family: Ubuntu, sans-serif;
 }
 .tippy-tooltip[data-template-id="#github-tooltip"] div.float-left.text-gray {
   display: inline-block;
@@ -182,9 +158,6 @@ body {
   font-weight: bolder;
   text-decoration: none;
   transition: 300ms;
-}
-.tippy-tooltip[data-template-id="#github-tooltip"] a:hover {
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
 .tippy-tooltip[data-template-id="#github-tooltip"] .contrib-legend {
   padding-right: 0 !important;
