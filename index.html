@@ -31,9 +31,9 @@
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_US">
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="stylesheet" href="icons/style.css" type="text/css">
-    <link rel="stylesheet" href="https://unpkg.com/github-calendar@2.2.7/dist/github-calendar-responsive.css" type="text/css">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="stylesheet" href="./icons/style.css" type="text/css">
+    <link rel="stylesheet" href="./lib/github-calendar.min.css" type="text/css">
   </head>
 
   <body>
@@ -51,10 +51,8 @@
         <a class="social-icon" href="https://algolia.com" title="Algolia" target="_blank">
           <svg id="algolia" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
             <g id="algolia--white" fill="#ffffff">
-              <path
-                d="M127.545 309.995C128.818 309.995 128.818 309.995 127.545 309.995C144.09 288.397 160.636 268.069 179.727 250.283C198.817 231.226 217.908 214.71 239.544 199.464C243.363 196.923 244.635 190.571 242.09 186.759C242.09 186.759 242.09 185.489 240.817 185.489L214.09 158.809C188.636 133.4 146.636 133.4 119.909 158.809L88.0908 190.571C62.6364 215.98 62.6364 257.906 88.0908 283.315L113.545 308.725C118.636 313.806 123.727 313.806 127.545 309.995V309.995ZM387.18 128.318H389.725C432.998 115.613 478.816 109.261 524.634 109.261C567.906 109.261 612.451 115.613 654.451 127.047C659.542 128.318 664.633 125.777 664.633 120.695V66.0645C664.633 29.2209 635.36 0 598.452 0H444.452C407.544 0 378.271 29.2209 378.271 66.0645V119.424C376.998 124.506 382.089 128.318 387.18 128.318V128.318ZM523.361 162.62C285.362 162.62 91.9089 355.732 91.9089 593.31C91.9089 830.888 285.362 1024 523.361 1024C761.36 1024 954.813 830.888 954.813 593.31C954.813 355.732 761.36 162.62 523.361 162.62V162.62ZM523.361 896.953C355.362 895.682 219.181 759.742 220.454 592.04C220.454 424.337 357.907 288.397 524.634 289.667C692.633 289.667 828.814 426.878 827.541 593.31C827.541 761.012 691.36 896.953 523.361 896.953V896.953Z" />
-              <path
-                d="M532.61 342.514C527.528 342.514 523.717 346.353 523.717 351.471V579.223C523.717 584.341 527.528 588.18 532.61 588.18C533.88 588.18 535.151 588.18 536.421 586.9L737.137 481.981C742.218 479.422 743.488 474.304 740.948 469.186C697.756 393.695 618.994 345.073 532.61 342.514V342.514Z" />
+              <path d="M127.545 309.995C128.818 309.995 128.818 309.995 127.545 309.995C144.09 288.397 160.636 268.069 179.727 250.283C198.817 231.226 217.908 214.71 239.544 199.464C243.363 196.923 244.635 190.571 242.09 186.759C242.09 186.759 242.09 185.489 240.817 185.489L214.09 158.809C188.636 133.4 146.636 133.4 119.909 158.809L88.0908 190.571C62.6364 215.98 62.6364 257.906 88.0908 283.315L113.545 308.725C118.636 313.806 123.727 313.806 127.545 309.995V309.995ZM387.18 128.318H389.725C432.998 115.613 478.816 109.261 524.634 109.261C567.906 109.261 612.451 115.613 654.451 127.047C659.542 128.318 664.633 125.777 664.633 120.695V66.0645C664.633 29.2209 635.36 0 598.452 0H444.452C407.544 0 378.271 29.2209 378.271 66.0645V119.424C376.998 124.506 382.089 128.318 387.18 128.318V128.318ZM523.361 162.62C285.362 162.62 91.9089 355.732 91.9089 593.31C91.9089 830.888 285.362 1024 523.361 1024C761.36 1024 954.813 830.888 954.813 593.31C954.813 355.732 761.36 162.62 523.361 162.62V162.62ZM523.361 896.953C355.362 895.682 219.181 759.742 220.454 592.04C220.454 424.337 357.907 288.397 524.634 289.667C692.633 289.667 828.814 426.878 827.541 593.31C827.541 761.012 691.36 896.953 523.361 896.953V896.953Z" />
+              <path d="M532.61 342.514C527.528 342.514 523.717 346.353 523.717 351.471V579.223C523.717 584.341 527.528 588.18 532.61 588.18C533.88 588.18 535.151 588.18 536.421 586.9L737.137 481.981C742.218 479.422 743.488 474.304 740.948 469.186C697.756 393.695 618.994 345.073 532.61 342.514V342.514Z" />
             </g>
             <g id="algolia--gradient" fill="url(#algolia_gradient)" style="opacity: 0">
               <linearGradient id="algolia_gradient" x1="761.997" y1="360.028" x2="538.323" y2="588.277" gradientUnits="userSpaceOnUse">
@@ -69,7 +67,7 @@
         <a class="social-icon" href="https://www.lewagon.com" title="Le Wagon" target="_blank">
           <i id="lewagon" class="icomoon-lewagon" style="color: #ffffff; font-size: 2.8rem; margin: 12px -10px 0 -4px;"></i>
         </a>
-        <a class="social-icon" href="mailto:mail@gabrielecanepa.com" class="social-padding" id="mail-icon" target="_blank" title="Contact me!">
+        <a class="social-icon" href="mailto:mail@gabrielecanepa.com" class="social-padding" id="mail-icon" target="_blank" title="Contact me">
           <i id="mail" class="icomoon-mail" style="color: #ffffff; font-size: 2.7rem; margin-top: 9px;"></i>
         </a>
       </div>
@@ -112,8 +110,8 @@
       </div>
     </div>
 
-    <script src="https://unpkg.com/tippy.js@2.2.3/dist/tippy.all.min.js"></script>
-    <script src="https://unpkg.com/github-calendar@2.2.7/dist/github-calendar.min.js"></script>
+    <script src="./lib/tippy.min.js"></script>
+    <script src="./lib/github-calendar.min.js"></script>
     <script>
       var githubIcon = document.getElementById('github-icon');
       var githubTootlip = document.getElementById('github-tooltip');

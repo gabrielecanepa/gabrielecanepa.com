@@ -3,7 +3,6 @@
 var CACHE_NAME = 'gabrielecanepa.com_cache';
 
 var resources = [
-  // static assets
   '/',
   '/index.html',
   '/style.css',
@@ -28,10 +27,9 @@ var resources = [
   '/icons/fonts/icomoon.svg',
   '/icons/fonts/icomoon.ttf',
   '/icons/fonts/icomoon.woff',
-  // networked assets
-  'https://unpkg.com/github-calendar@2.2.7/dist/github-calendar-responsive.css',
-  'https://unpkg.com/github-calendar@2.2.7/dist/github-calendar.min.js',
-  'https://unpkg.com/tippy.js@2.2.3/dist/tippy.all.min.js',
+  '/lib/github-calendar.min.css',
+  '/lib/github-calendar.min.js',
+  '/lib/tippy.min.js',
 ];
 
 self.addEventListener('install', function (e) {
