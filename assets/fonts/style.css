@@ -1,12 +1,28 @@
+/* Ubuntu */
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  src: url(./ubuntu/ubuntu.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  src: url(./ubuntu/ubuntu.ext.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Icomoon */
 @font-face {
   font-family: "icomoon";
   font-style: normal;
   font-weight: normal;
-  src: url("./fonts/icomoon.eot");
-  src: url("./fonts/icomoon.eot") format("embedded-opentype"),
-       url("./fonts/icomoon.ttf") format("truetype"),
-       url("./fonts/icomoon.woff") format("woff"),
-       url("./fonts/icomoon.svg") format("svg");
+  src: url(./icomoon/icomoon.eot) format("embedded-opentype"),
+       url(./icomoon/icomoon.ttf) format("truetype"),
+       url(./icomoon/icomoon.woff) format("woff"),
+       url(./icomoon/icomoon.svg) format("svg");
 }
 
 i,
@@ -28,37 +44,9 @@ i,
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icomoon-trello:before {
-  content: "\e902";
-  color: #0079bf;
-}
-.icomoon-bootstrap:before {
-  content: "\e903";
-  color: #563d7c;
-}
 .icomoon-nodejs:before {
   content: "\e904";
   color: #393;
-}
-.icomoon-mysql:before {
-  content: "\e905";
-  color: #4479a1;
-}
-.icomoon-jquery:before {
-  content: "\e906";
-  color: #0769ad;
-}
-.icomoon-adobeillustrator:before {
-  content: "\e907";
-  color: #ff7c00;
-}
-.icomoon-adobephotoshop:before {
-  content: "\e908";
-  color: #00c8ff;
-}
-.icomoon-angular:before {
-  content: "\e909";
-  color: #dd0031;
 }
 .icomoon-react:before {
   content: "\e90a";
@@ -67,10 +55,6 @@ i,
 .icomoon-css3:before {
   content: "\e90b";
   color: #1572b6;
-}
-.icomoon-html5:before {
-  content: "\e90c";
-  color: #e34f26;
 }
 .icomoon-github2:before {
   content: "\e90d";
@@ -108,7 +92,4 @@ i,
 }
 .icomoon-linkedin:before {
   content: "\eaca";
-}
-.icomoon-svg:before {
-  content: "\eae9";
 }

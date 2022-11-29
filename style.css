@@ -1,11 +1,14 @@
-@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+@import url(./assets/fonts/style.css);
+
+:root {
+  --color-js: #f7df1e;
+  --color-react: #2fbfe7; /* #61dafb */
+  --color-ruby: #cc342d;
+}
 
 /* General rules */
 * {
   box-sizing: border-box;
-}
-*:focus {
-  outline: none !important;
 }
 html {
   background-color: #fd644e;
@@ -63,6 +66,11 @@ body {
   align-items: center;
   padding: 0 0.5rem;
   text-decoration: none;
+  border: 2px solid transparent;
+  outline: none;
+}
+#content .socials a:focus {
+  border: 2px dotted #4688f1;
 }
 #content .socials i {
   font-size: 2.5rem;
@@ -74,27 +82,41 @@ body {
 #content .socials i:visited {
   color: #ffffff;
 }
-#content .socials #github:hover,
-#content .socials #github-icon.tippy-active #github {
+#github-icon:hover #github,
+#github-icon:focus #github,
+#github-icon.tippy-active #github {
   color: #24292e !important;
 }
-#content .socials #linkedin:hover {
+#linkedin-icon:hover #linkedin,
+#linkedin-icon:focus #linkedin {
   color: #2977ca !important;
 }
-#content .socials #lewagon:hover {
+#lewagon-icon:hover #lewagon,
+#lewagon-icon:focus #lewagon {
   color: #fd1015 !important;
 }
-#content .socials #algolia {
+#algolia {
   height: 40px;
 }
-#content .socials #algolia #algolia--gradient {
+#algolia--gradient {
   transition: opacity 300ms ease;
 }
-#content .socials #algolia:hover #algolia--gradient {
+#algolia:hover #algolia--gradient,
+#algolia:focus #algolia--gradient {
   opacity: 1 !important;
 }
-#content .socials #mail:hover {
+#mail-icon:hover #mail,
+#mail-icon:focus #mail {
   color: #4688f1 !important;
+}
+
+/* Tooltips */
+.tippy-tooltip {
+  font-family: Ubuntu, sans-serif;
+  font-weight: bolder;
+}
+.tippy-content {
+  font-size: 15px;
 }
 
 /* Github tooltip */
@@ -111,10 +133,12 @@ body {
   pointer-events: none;
 }
 #github-tooltip .js-calendar-graph .ContributionCalendar-label {
-  fill: #aaa;
+  fill: #ccc;
+  font-weight: bolder;
 }
 #github-tooltip .width-full {
   font-size: 12px;
+  font-weight: bolder;
   padding-bottom: 4px;
 }
 #github-tooltip .width-full svg {
@@ -132,7 +156,6 @@ body {
 #github-tooltip .js-calendar-graph .width-full:not(:nth-child(2)) {
   display: none;
 }
-
 .tippy-tooltip {
   font-family: Ubuntu, sans-serif;
 }
@@ -287,22 +310,22 @@ body {
 }
 .crane-one .line.line-three:after {
   content: "\e911";
-  color: #f7df1e;
+  color: var(--color-js);
   font-size: 2.2rem;
   left: -6px;
   height: 0.4rem;
 }
 .crane-two .line.line-three:after {
-  content: "\e910";
-  color: #cc342d;
-  font-size: 1.75rem;
+  content: "\e90a";
+  color: var(--color-react);
+  font-size: 1.9rem;
   left: -2.8px;
   transform: rotate(45deg);
   animation: shakeBlock 10s infinite alternate;
 }
 .crane-three .line.line-three:after {
-  content: "\e90b";
-  color: #1572b6;
+  content: "\e910";
+  color: var(--color-ruby);
   width: auto;
   font-size: 1.4rem;
   left: -2.8px;
@@ -599,18 +622,3 @@ body {
     left: 63%;
   }
 }
-/* @media only screen and (min-width: 375px) and (max-width: 768px) {
-  #content .socials {
-    height: 2.7rem;
-  }
-  #content .socials i {
-    font-size: 2.2rem;
-  }
-  .crane-two {
-    display: none;
-  }
-  .buildings div:nth-of-type(1),
-  .buildings div:nth-of-type(2) {
-    display: none;
-  }
-} */

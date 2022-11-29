@@ -1,74 +1,53 @@
 <!DOCTYPE html>
-<html lang="en" manifest="nameofthemanifest.appcache">
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>@gabrielecanepa</title>
-    <meta name="description" content="Gabriele Canepa, software engineer and teacher.">
-    <meta name="google" content="notranslate">
-    <meta name="keywords" content="gabriele canepa, gabrielecanepa, le wagon, lewagon, programming, coding, github, linkedin, portugal, lisbon, lisboa, italy, italia, genoa, genova, liguria, zena, squonk, gabrisquonk, rails, ruby, ruby on rails, react, vue, javascript, html, css, docker, phyton, pgp, security, ux, ui, user experience, user interface, blog, ai, artificial intelligence, machine learning, innovation, apps, software developer, education, school, buddyfit, startup, algolia, engineer, github">
-    <link rel="author" href="https://gabrielecanepa.com">
-    <link rel="author" href="https://github.com/gabrielecanepa" type="text/html">
-    <link rel="author" href="https://www.linkedin.com/in/gabrielecanepa" type="text/html">
-    <link rel="author" href="mailto:mail@gabrielecanepa.com">
-    <link rel="license" href="https://gabrielecanepa.mit-license.org">
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
-    <link rel="manifest" href="./favicon/site.webmanifest">
-    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#898989">
-    <link rel="shortcut icon" href="./favicon/favicon.ico">
-    <meta name="msapplication-TileColor" content="#ff6544">
-    <meta name="msapplication-config" content="./favicon/browserconfig.xml">
-    <meta name="theme-color" content="#ff6544">
-    <!-- Open graph -->
-    <meta property="og:url" content="https://gabrielecanepa.com">
-    <meta property="og:title" content="@gabrielecanepa">
-    <meta property="og:description" content="[object Object]">
-    <meta property="og:image" content="https://gabrielecanepa.com/social/og.png">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="en_US">
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="./style.css" type="text/css">
-    <link rel="stylesheet" href="./icons/style.css" type="text/css">
-    <link rel="stylesheet" href="./lib/github-calendar.min.css" type="text/css">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="gabriele canepa, gabrielecanepa, le wagon, lewagon, programming, coding, github, linkedin, portugal, lisbon, lisboa, italy, italia, genoa, genova, liguria, zena, squonk, itsguello, rails, ruby, ruby on rails, react, vue, javascript, html, css, docker, phyton, pgp, security, ux, ui, user experience, user interface, blog, ai, artificial intelligence, machine learning, innovation, apps, software developer, education, school, buddyfit, startup, algolia, engineer" />
+    <link rel="author" href="https://gabrielecanepa.com" type="text/html" />
+    <link rel="author" href="https://github.com/gabrielecanepa" type="text/html" />
+    <link rel="author" href="https://linkedin.com/in/gabrielecanepa" type="text/html" />
+    <link rel="author" href="mailto:mail@gabrielecanepa.com" />
+    <link rel="license" href="https://gabrielecanepa.mit-license.org" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png" />
+    <link rel="manifest" href="/assets/images/site.webmanifest" />
+    <link rel="mask-icon" href="/assets/images/safari-pinned-tab.svg" color="#898989" />
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#ff6544" />
+    <meta name="msapplication-config" content="/assets/images/browserconfig.xml" />
+    <meta name="theme-color" content="#ff6544" />
+    <meta property="og:url" content="https://gabrielecanepa.com" />
+    <meta property="og:title" content="@gabrielecanepa" />
+    <meta property="og:image" content="https://gabrielecanepa.com/assets/images/banner.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <link rel="stylesheet" href="/style.css" type="text/css" />
+    <link rel="stylesheet" href="/assets/libs/github-calendar.min.css" type="text/css" />
   </head>
 
   <body>
     <div id="content">
       <div class="socials">
-        <div id="github-tooltip">
-          Loading...
-        </div>
-        <a href="https://github.com/gabrielecanepa" id="github-icon" title="GitHub" target="_blank">
+        <div id="github-tooltip">Loading...</div>
+        <a id="github-icon" href="https://github.com/gabrielecanepa" target="_blank" title="GitHub">
           <i id="github" class="icomoon-github" style="color: #ffffff"></i>
         </a>
-        <a class="social-icon" href="https://linkedin.com/in/gabrielecanepa" title="LinkedIn" target="_blank">
-          <i id="linkedin" class="icomoon-linkedin" style="color: #ffffff; font-size: 2.7rem;"></i>
+        <a id="linkedin-icon" class="social-icon" href="https://linkedin.com/in/gabrielecanepa" target="_blank" title="LinkedIn">
+          <i id="linkedin" class="icomoon-linkedin" style="color: #ffffff; font-size: 2.7rem"></i>
         </a>
-        <a class="social-icon" href="https://algolia.com" title="Algolia" target="_blank">
-          <svg id="algolia" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
-            <g id="algolia--white" fill="#ffffff">
-              <path d="M127.545 309.995C128.818 309.995 128.818 309.995 127.545 309.995C144.09 288.397 160.636 268.069 179.727 250.283C198.817 231.226 217.908 214.71 239.544 199.464C243.363 196.923 244.635 190.571 242.09 186.759C242.09 186.759 242.09 185.489 240.817 185.489L214.09 158.809C188.636 133.4 146.636 133.4 119.909 158.809L88.0908 190.571C62.6364 215.98 62.6364 257.906 88.0908 283.315L113.545 308.725C118.636 313.806 123.727 313.806 127.545 309.995V309.995ZM387.18 128.318H389.725C432.998 115.613 478.816 109.261 524.634 109.261C567.906 109.261 612.451 115.613 654.451 127.047C659.542 128.318 664.633 125.777 664.633 120.695V66.0645C664.633 29.2209 635.36 0 598.452 0H444.452C407.544 0 378.271 29.2209 378.271 66.0645V119.424C376.998 124.506 382.089 128.318 387.18 128.318V128.318ZM523.361 162.62C285.362 162.62 91.9089 355.732 91.9089 593.31C91.9089 830.888 285.362 1024 523.361 1024C761.36 1024 954.813 830.888 954.813 593.31C954.813 355.732 761.36 162.62 523.361 162.62V162.62ZM523.361 896.953C355.362 895.682 219.181 759.742 220.454 592.04C220.454 424.337 357.907 288.397 524.634 289.667C692.633 289.667 828.814 426.878 827.541 593.31C827.541 761.012 691.36 896.953 523.361 896.953V896.953Z" />
-              <path d="M532.61 342.514C527.528 342.514 523.717 346.353 523.717 351.471V579.223C523.717 584.341 527.528 588.18 532.61 588.18C533.88 588.18 535.151 588.18 536.421 586.9L737.137 481.981C742.218 479.422 743.488 474.304 740.948 469.186C697.756 393.695 618.994 345.073 532.61 342.514V342.514Z" />
-            </g>
-            <g id="algolia--gradient" fill="url(#algolia_gradient)" style="opacity: 0">
-              <linearGradient id="algolia_gradient" x1="761.997" y1="360.028" x2="538.323" y2="588.277" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#3369e7" />
-                <stop offset="1" stop-color="#00aeff" />
-              </linearGradient>
-              <path d="M127.545 309.995C128.818 309.995 128.818 309.995 127.545 309.995C144.09 288.397 160.636 268.069 179.727 250.283C198.817 231.226 217.908 214.71 239.544 199.464C243.363 196.923 244.635 190.571 242.09 186.759C242.09 186.759 242.09 185.489 240.817 185.489L214.09 158.809C188.636 133.4 146.636 133.4 119.909 158.809L88.0908 190.571C62.6364 215.98 62.6364 257.906 88.0908 283.315L113.545 308.725C118.636 313.806 123.727 313.806 127.545 309.995V309.995ZM387.18 128.318H389.725C432.998 115.613 478.816 109.261 524.634 109.261C567.906 109.261 612.451 115.613 654.451 127.047C659.542 128.318 664.633 125.777 664.633 120.695V66.0645C664.633 29.2209 635.36 0 598.452 0H444.452C407.544 0 378.271 29.2209 378.271 66.0645V119.424C376.998 124.506 382.089 128.318 387.18 128.318V128.318ZM523.361 162.62C285.362 162.62 91.9089 355.732 91.9089 593.31C91.9089 830.888 285.362 1024 523.361 1024C761.36 1024 954.813 830.888 954.813 593.31C954.813 355.732 761.36 162.62 523.361 162.62V162.62ZM523.361 896.953C355.362 895.682 219.181 759.742 220.454 592.04C220.454 424.337 357.907 288.397 524.634 289.667C692.633 289.667 828.814 426.878 827.541 593.31C827.541 761.012 691.36 896.953 523.361 896.953V896.953Z" />
-              <path d="M532.61 342.514C527.528 342.514 523.717 346.353 523.717 351.471V579.223C523.717 584.341 527.528 588.18 532.61 588.18C533.88 588.18 535.151 588.18 536.421 586.9L737.137 481.981C742.218 479.422 743.488 474.304 740.948 469.186C697.756 393.695 618.994 345.073 532.61 342.514V342.514Z" />
-            </g>
-          </svg>
+        <a id="algolia-icon" class="social-icon" href="https://algolia.com" target="_blank" title="Algolia">
+          <svg id="algolia" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><g id="algolia--white" fill="#ffffff"><path d="M127.545 309.995C128.818 309.995 128.818 309.995 127.545 309.995C144.09 288.397 160.636 268.069 179.727 250.283C198.817 231.226 217.908 214.71 239.544 199.464C243.363 196.923 244.635 190.571 242.09 186.759C242.09 186.759 242.09 185.489 240.817 185.489L214.09 158.809C188.636 133.4 146.636 133.4 119.909 158.809L88.0908 190.571C62.6364 215.98 62.6364 257.906 88.0908 283.315L113.545 308.725C118.636 313.806 123.727 313.806 127.545 309.995V309.995ZM387.18 128.318H389.725C432.998 115.613 478.816 109.261 524.634 109.261C567.906 109.261 612.451 115.613 654.451 127.047C659.542 128.318 664.633 125.777 664.633 120.695V66.0645C664.633 29.2209 635.36 0 598.452 0H444.452C407.544 0 378.271 29.2209 378.271 66.0645V119.424C376.998 124.506 382.089 128.318 387.18 128.318V128.318ZM523.361 162.62C285.362 162.62 91.9089 355.732 91.9089 593.31C91.9089 830.888 285.362 1024 523.361 1024C761.36 1024 954.813 830.888 954.813 593.31C954.813 355.732 761.36 162.62 523.361 162.62V162.62ZM523.361 896.953C355.362 895.682 219.181 759.742 220.454 592.04C220.454 424.337 357.907 288.397 524.634 289.667C692.633 289.667 828.814 426.878 827.541 593.31C827.541 761.012 691.36 896.953 523.361 896.953V896.953Z" /><path d="M532.61 342.514C527.528 342.514 523.717 346.353 523.717 351.471V579.223C523.717 584.341 527.528 588.18 532.61 588.18C533.88 588.18 535.151 588.18 536.421 586.9L737.137 481.981C742.218 479.422 743.488 474.304 740.948 469.186C697.756 393.695 618.994 345.073 532.61 342.514V342.514Z" /></g><g id="algolia--gradient" fill="url(#algolia_gradient)" style="opacity: 0"><linearGradient id="algolia_gradient" x1="761.997" y1="360.028" x2="538.323" y2="588.277" gradientUnits="userSpaceOnUse" ><stop stop-color="#3369e7" /><stop offset="1" stop-color="#00aeff" /></linearGradient><path d="M127.545 309.995C128.818 309.995 128.818 309.995 127.545 309.995C144.09 288.397 160.636 268.069 179.727 250.283C198.817 231.226 217.908 214.71 239.544 199.464C243.363 196.923 244.635 190.571 242.09 186.759C242.09 186.759 242.09 185.489 240.817 185.489L214.09 158.809C188.636 133.4 146.636 133.4 119.909 158.809L88.0908 190.571C62.6364 215.98 62.6364 257.906 88.0908 283.315L113.545 308.725C118.636 313.806 123.727 313.806 127.545 309.995V309.995ZM387.18 128.318H389.725C432.998 115.613 478.816 109.261 524.634 109.261C567.906 109.261 612.451 115.613 654.451 127.047C659.542 128.318 664.633 125.777 664.633 120.695V66.0645C664.633 29.2209 635.36 0 598.452 0H444.452C407.544 0 378.271 29.2209 378.271 66.0645V119.424C376.998 124.506 382.089 128.318 387.18 128.318V128.318ZM523.361 162.62C285.362 162.62 91.9089 355.732 91.9089 593.31C91.9089 830.888 285.362 1024 523.361 1024C761.36 1024 954.813 830.888 954.813 593.31C954.813 355.732 761.36 162.62 523.361 162.62V162.62ZM523.361 896.953C355.362 895.682 219.181 759.742 220.454 592.04C220.454 424.337 357.907 288.397 524.634 289.667C692.633 289.667 828.814 426.878 827.541 593.31C827.541 761.012 691.36 896.953 523.361 896.953V896.953Z" /><path d="M532.61 342.514C527.528 342.514 523.717 346.353 523.717 351.471V579.223C523.717 584.341 527.528 588.18 532.61 588.18C533.88 588.18 535.151 588.18 536.421 586.9L737.137 481.981C742.218 479.422 743.488 474.304 740.948 469.186C697.756 393.695 618.994 345.073 532.61 342.514V342.514Z" /></g></svg>
         </a>
-        <a class="social-icon" href="https://www.lewagon.com" title="Le Wagon" target="_blank">
-          <i id="lewagon" class="icomoon-lewagon" style="color: #ffffff; font-size: 2.8rem; margin: 12px -10px 0 -4px;"></i>
+        <a id="lewagon-icon" class="social-icon" href="https://www.lewagon.com" target="_blank" title="Le Wagon">
+          <i id="lewagon" class="icomoon-lewagon" style="color: #ffffff; font-size: 2.8rem; margin: 12px -10px 0 -4px"></i>
         </a>
-        <a class="social-icon" href="mailto:mail@gabrielecanepa.com" class="social-padding" id="mail-icon" target="_blank" title="Contact me">
-          <i id="mail" class="icomoon-mail" style="color: #ffffff; font-size: 2.7rem; margin-top: 9px;"></i>
+        <a id="mail-icon" class="social-icon" href="mailto:mail@gabrielecanepa.com" target="_blank" title="Contact me">
+          <i id="mail" class="icomoon-mail" style="color: #ffffff; font-size: 2.7rem; margin-top: 9px"></i>
         </a>
       </div>
     </div>
@@ -110,8 +89,8 @@
       </div>
     </div>
 
-    <script src="./lib/tippy.min.js"></script>
-    <script src="./lib/github-calendar.min.js"></script>
+    <script src="/assets/libs/tippy.min.js"></script>
+    <script src="/assets/libs/github-calendar.min.js"></script>
     <script>
       var githubIcon = document.getElementById('github-icon');
       var githubTootlip = document.getElementById('github-tooltip');
@@ -120,7 +99,6 @@
       var isTouch = !!('ontouchstart' in window) || !!('msmaxtouchpoints' in window.navigator);
       var isTooltipOpen = false;
       if (!isMobile) {
-        // GitHub tooltip and calendar
         GitHubCalendar('#github-tooltip', 'gabrielecanepa', {
           global_stats: false,
           responsive: true,
@@ -133,16 +111,17 @@
           distance: 20,
           inertia: true,
           duration: [250, 100],
+          appendTo: document.body,
         });
         githubIcon.addEventListener('click', function (e) {
           if (isTouch && !isTooltipOpen) {
-            e.preventDefault();
-            isTooltipOpen = true;
+            e.preventDefault()
+            isTooltipOpen = true
           }
         });
         document.body.addEventListener('click', function (e) {
           if (isTooltipOpen && !/github|tippy/.test(e.target.id)) {
-            isTooltipOpen = false;
+            isTooltipOpen = false
           }
         });
         // Social tooltips
