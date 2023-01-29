@@ -113,18 +113,31 @@ body {
 /* Tooltips */
 .tippy-tooltip {
   font-family: Ubuntu, sans-serif;
-  font-weight: bolder;
+  font-weight: normal;
 }
 .tippy-content {
   font-size: 15px;
 }
 
 /* Github tooltip */
+contribution-graph-celebration {
+  display: none !important;
+}
 #github-tooltip {
   text-align: center;
   margin: 0 auto;
   min-height: 0 !important;
   padding: 0.2rem;
+}
+#github-tooltip .Box-header {
+  padding: 0.6rem 0;
+}
+#github-tooltip .Box-header .octicon {
+  margin-bottom: -2px;
+  fill: #ed6d52;
+}
+#github-tooltip .Box-header a {
+  font-weight: bolder;
 }
 #github-tooltip .js-calendar-graph {
   min-width: 600px;
@@ -138,7 +151,7 @@ body {
 }
 #github-tooltip .width-full {
   font-size: 12px;
-  font-weight: bolder;
+  font-weight: normal;
   padding-bottom: 4px;
 }
 #github-tooltip .width-full svg {
@@ -152,6 +165,9 @@ body {
 }
 #github-tooltip .js-calendar-graph .width-full:nth-child(2) .float-left {
   display: none;
+}
+#github-tooltip .js-calendar-graph .width-full:nth-child(2) .float-right {
+  font-size: 11px;
 }
 #github-tooltip .js-calendar-graph .width-full:not(:nth-child(2)) {
   display: none;
