@@ -1,6 +1,6 @@
 /* eslint-disable */
 
-var CACHE_NAME = 'gabrielecanepa_cache'
+var CACHE_NAME = 'gabrielecanepa-v1'
 
 var resources = [
   '/',
@@ -45,7 +45,11 @@ self.addEventListener('install', function (e) {
   )
 })
 
-self.addEventListener('activate', function () {
+self.addEventListener('activate', async function () {
+  var currentCaches = await caches.keys()
+  var invalidCaches = currentCaches.filter(cache => cache !== CACHE_NAME)
+  await Promise.all(invalidCaches.map(invalidCache => caches.delete(invalidCache)))
+
   self.clients.claim()
 })
 
