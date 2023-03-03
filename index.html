@@ -92,7 +92,62 @@
     <script src="/assets/libs/tippy.min.js"></script>
     <script src="/assets/libs/github-calendar.min.js"></script>
     <script>
-      var t=document.getElementById("github-icon"),e=document.getElementById("github-tooltip"),i=(document.getElementById("tippy-1"),window.innerWidth<708),n=!!("ontouchstart"in window)||!!("msmaxtouchpoints"in window.navigator),o=!1;if(i)e.style.display="none";else{GitHubCalendar("#github-tooltip","gabrielecanepa",{global_stats:!1,responsive:!0}),tippy(t,{html:e,placement:"bottom",arrow:!0,interactive:!0,distance:20,inertia:!0,duration:[250,100],appendTo:document.body}),t.addEventListener("click",(function(t){n&&!o&&(t.preventDefault(),o=!0)})),document.body.addEventListener("click",(function(t){o&&!/github|tippy/.test(t.target.id)&&(o=!1)}));for(var a=document.querySelectorAll(".social-icon"),r=0;r<a.length;r++)tippy(a[r],{placement:"top",arrow:!0,interactive:!1,distance:10,inertia:!0,duration:[225,100]})}navigator&&navigator.serviceWorker&&navigator.serviceWorker.register("sw.js",{scope:"."});
+      var githubIcon = document.getElementById('github-icon');
+      var githubTootlip = document.getElementById('github-tooltip');
+      var tippyTooltip = document.getElementById('tippy-1');
+      var isMobile = window.innerWidth < 708;
+      var isTouch = !!('ontouchstart' in window) || !!('msmaxtouchpoints' in window.navigator);
+      var isTooltipOpen = false;
+      if (!isMobile) {
+        GitHubCalendar('#github-tooltip', 'gabrielecanepa', {
+          global_stats: false,
+          responsive: true,
+        });
+        tippy(githubIcon, {
+          html: githubTootlip,
+          placement: 'bottom',
+          arrow: true,
+          interactive: true,
+          distance: 20,
+          inertia: true,
+          duration: [250, 100],
+          appendTo: document.body,
+        });
+        githubIcon.addEventListener('click', function (e) {
+          if (isTouch && !isTooltipOpen) {
+            e.preventDefault()
+            isTooltipOpen = true
+          }
+        });
+        document.body.addEventListener('click', function (e) {
+          if (isTooltipOpen && !/github|tippy/.test(e.target.id)) {
+            isTooltipOpen = false
+          }
+        });
+        // Social tooltips
+        var socialIcons = document.querySelectorAll('.social-icon');
+        for (var i = 0; i < socialIcons.length; i++) {
+          var icon = socialIcons[i];
+          tippy(icon, {
+            placement: 'top',
+            arrow: true,
+            interactive: false,
+            distance: 10,
+            inertia: true,
+            duration: [225, 100],
+          });
+        }
+      } else {
+        githubTootlip.style.display = 'none';
+      }
+      // Register service worker
+      if (navigator && navigator.serviceWorker) {
+        navigator.serviceWorker.register('sw.js', {
+          scope: '.',
+        });
+      }
     </script>
+    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.dev.js"></script>
+    <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
   </body>
 </html>

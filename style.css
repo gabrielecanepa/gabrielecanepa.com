@@ -101,8 +101,8 @@ body {
 #algolia--gradient {
   transition: opacity 300ms ease;
 }
-#algolia:hover #algolia--gradient,
-#algolia:focus #algolia--gradient {
+#algolia-icon:hover #algolia--gradient,
+#algolia-icon:focus #algolia--gradient {
   opacity: 1 !important;
 }
 #mail-icon:hover #mail,
