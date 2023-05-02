@@ -26,7 +26,6 @@ var resources = [
   '/assets/images/mstile-310x150.png',
   '/assets/images/mstile-310x310.png',
   '/assets/images/mstile-70x70.png',
-  '/assets/images/safari-pinned-tab.svg',
   '/assets/images/site.webmanifest',
   '/assets/libs/github-calendar.min.css',
   '/assets/libs/github-calendar.min.js',
@@ -49,7 +48,6 @@ self.addEventListener('activate', async function () {
   var currentCaches = await caches.keys()
   var invalidCaches = currentCaches.filter(cache => cache !== CACHE_NAME)
   await Promise.all(invalidCaches.map(invalidCache => caches.delete(invalidCache)))
-
   self.clients.claim()
 })
 
