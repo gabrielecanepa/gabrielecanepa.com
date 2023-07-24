@@ -33,8 +33,8 @@
   <body>
     <div id="content">
       <div class="socials">
-        <div id="github-tooltip">Loading...</div>
-        <a id="github-icon" href="https://github.com/gabrielecanepa" target="_blank" title="GitHub">
+        <!-- <div id="github-tooltip">GitHub</div> -->
+        <a id="github-icon" class="social-icon" href="https://github.com/gabrielecanepa" target="_blank" title="GitHub">
           <i id="github" class="icomoon-github" style="color: #ffffff"></i>
         </a>
         <a id="linkedin-icon" class="social-icon" href="https://linkedin.com/in/gabrielecanepa" target="_blank" title="LinkedIn">
@@ -100,31 +100,31 @@
       var isTouch = !!('ontouchstart' in window) || !!('msmaxtouchpoints' in window.navigator);
       var isTooltipOpen = false;
       if (!isMobile) {
-        GitHubCalendar('#github-tooltip', 'gabrielecanepa', {
-          global_stats: false,
-          responsive: true,
-        });
-        tippy(githubIcon, {
-          html: githubTootlip,
-          placement: 'bottom',
-          arrow: true,
-          interactive: true,
-          distance: 20,
-          inertia: true,
-          duration: [250, 100],
-          appendTo: document.body,
-        });
-        githubIcon.addEventListener('click', function (e) {
-          if (isTouch && !isTooltipOpen) {
-            e.preventDefault();
-            isTooltipOpen = true;
-          }
-        });
-        document.body.addEventListener('click', function (e) {
-          if (isTooltipOpen && !/github|tippy/.test(e.target.id)) {
-            isTooltipOpen = false;
-          }
-        });
+        // GitHubCalendar('#github-tooltip', 'gabrielecanepa', {
+        //   global_stats: false,
+        //   responsive: true,
+        // });
+        // tippy(githubIcon, {
+        //   html: githubTootlip,
+        //   placement: 'bottom',
+        //   arrow: true,
+        //   interactive: true,
+        //   distance: 20,
+        //   inertia: true,
+        //   duration: [250, 100],
+        //   appendTo: document.body,
+        // });
+        // githubIcon.addEventListener('click', function (e) {
+        //   if (isTouch && !isTooltipOpen) {
+        //     e.preventDefault();
+        //     isTooltipOpen = true;
+        //   }
+        // });
+        // document.body.addEventListener('click', function (e) {
+        //   if (isTooltipOpen && !/github|tippy/.test(e.target.id)) {
+        //     isTooltipOpen = false;
+        //   }
+        // });
         // Social tooltips
         var socialIcons = document.querySelectorAll('.social-icon');
         for (var i = 0; i < socialIcons.length; i++) {
