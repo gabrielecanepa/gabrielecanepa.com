@@ -1,4 +1,4 @@
-@import url(./assets/fonts/style.css);
+@import url(assets/fonts/style.css);
 
 :root {
   --color-js: #f7df1e;
@@ -50,6 +50,11 @@ body {
   color: #fff;
   padding-bottom: 20vh;
 }
+#content .title {
+  font-size: 3.2rem;
+  margin-bottom: 3rem;
+  margin-left: 1.6rem;
+}
 #content .socials {
   text-align: center;
   overflow: hidden;
@@ -64,7 +69,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 0.5rem;
+  padding: 0 0.6rem;
   text-decoration: none;
   border: 2px solid transparent;
   outline: none;
@@ -602,6 +607,10 @@ contribution-graph-celebration {
 
 /* Responsive widths */
 @media only screen and (max-width: 768px) {
+  #content .title {
+    font-size: 2rem;
+    margin-bottom: 1.8rem;
+  }
   #content .socials {
     margin-top: 10px;
     height: 2.75rem;
