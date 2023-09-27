@@ -6,7 +6,7 @@
   --color-ruby: #cc342d;
 }
 
-/* General rules */
+/* Global */
 * {
   box-sizing: border-box;
 }
@@ -31,9 +31,6 @@ body {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
   font-family: Ubuntu, sans-serif;
 }
-.hidden {
-  display: none !important;
-}
 
 /* Content */
 #content {
@@ -53,7 +50,11 @@ body {
 #content .title {
   font-size: 3.2rem;
   margin-bottom: 3rem;
-  margin-left: 1.6rem;
+  position: relative;
+  margin: 0 2rem 3rem;
+}
+#content .title .cursor {
+  position: absolute;
 }
 #content .socials {
   text-align: center;
@@ -96,20 +97,6 @@ body {
 #linkedin-icon:focus #linkedin {
   color: #2977ca !important;
 }
-#lewagon-icon:hover #lewagon,
-#lewagon-icon:focus #lewagon {
-  color: #fd1015 !important;
-}
-#algolia {
-  height: 40px;
-}
-#algolia--gradient {
-  transition: opacity 300ms ease;
-}
-#algolia-icon:hover #algolia--gradient,
-#algolia-icon:focus #algolia--gradient {
-  opacity: 1 !important;
-}
 #mail-icon:hover #mail,
 #mail-icon:focus #mail {
   color: #4688f1 !important;
@@ -124,78 +111,106 @@ body {
   font-size: 15px;
 }
 
-/* Github tooltip */
-contribution-graph-celebration {
-  display: none !important;
+/* Animations */
+@keyframes moveCrane {
+  0%,
+  20% {
+    transform: rotateY(0);
+  }
+  70%,
+  100% {
+    transform: rotateY(45deg);
+  }
 }
-#github-tooltip {
-  text-align: center;
-  margin: 0 auto;
-  min-height: 0 !important;
-  padding: 0.2rem;
+@keyframes moveWeight {
+  0%,
+  20% {
+    transform: rotateY(0) translateX(0);
+  }
+  70%,
+  100% {
+    transform: rotateY(45deg) translateX(-50%);
+  }
 }
-#github-tooltip .Box-header {
-  padding: 0.6rem 0;
+@keyframes moveLineOne {
+  0%,
+  20% {
+    transform: rotateY(0) rotateZ(-10deg);
+  }
+  70%,
+  100% {
+    transform: rotateY(45deg) rotateZ(-10deg);
+  }
 }
-#github-tooltip .Box-header .octicon {
-  margin-bottom: -2px;
-  fill: #ed6d52;
+@keyframes moveLineTwo {
+  0%,
+  20% {
+    transform: rotateY(0) rotateZ(29deg);
+  }
+  70%,
+  100% {
+    transform: rotateY(15deg) rotateZ(29deg);
+  }
 }
-#github-tooltip .Box-header a {
-  font-weight: bolder;
+@keyframes moveLineThree {
+  0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(2500%, -18%);
+    height: 10%;
+  }
+  60% {
+    transform: translate(11000%, -25%);
+  }
+  70% {
+    transform: translate(9100%, -25%);
+    height: 25%;
+  }
+  90%,
+  100% {
+    transform: translate(9100%, -15%);
+    height: 55%;
+  }
 }
-#github-tooltip .js-calendar-graph {
-  min-width: 600px;
-  padding: 5px 0 0;
-  text-align: center;
-  pointer-events: none;
+@keyframes moveLineThreeSmall {
+  0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(2500%, -18%);
+    height: 15%;
+  }
+  60% {
+    transform: translate(5000%, -25%);
+  }
+  70% {
+    transform: translate(6000%, -25%);
+    height: 30%;
+  }
+  90%,
+  100% {
+    transform: translate(7000%, 0);
+    height: 60%;
+  }
 }
-#github-tooltip .js-calendar-graph .ContributionCalendar-label {
-  fill: #ccc;
-  font-weight: bolder;
-}
-#github-tooltip .width-full {
-  font-size: 12px;
-  font-weight: normal;
-  padding-bottom: 4px;
-}
-#github-tooltip .width-full svg {
-  height: 100%;
-}
-#github-tooltip .width-full svg:first-child {
-  margin-left: 4px;
-}
-#github-tooltip .width-full svg:last-child {
-  margin-right: 4px;
-}
-#github-tooltip .js-calendar-graph .width-full:nth-child(2) .float-left {
-  display: none;
-}
-#github-tooltip .js-calendar-graph .width-full:nth-child(2) .float-right {
-  font-size: 11px;
-}
-#github-tooltip .js-calendar-graph .width-full:not(:nth-child(2)) {
-  display: none;
-}
-.tippy-tooltip {
-  font-family: Ubuntu, sans-serif;
-}
-.tippy-tooltip[data-template-id="#github-tooltip"] {
-  padding: 0.5rem;
-}
-.tippy-tooltip[data-template-id="#github-tooltip"] div.float-left.text-gray {
-  display: inline-block;
-  padding-left: 18px;
-  padding-top: 4px;
-}
-.tippy-tooltip[data-template-id="#github-tooltip"] a {
-  color: white;
-  font-weight: bolder;
-  text-decoration: none;
-  transition: 300ms;
-}
-.tippy-tooltip[data-template-id="#github-tooltip"] .contrib-legend {
-  padding-right: 0 !important;
+@keyframes shakeBlock {
+  from,
+  to {
+    transform: translate3d(0, 0, 0) rotate(45deg);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-2px, 0, 0) rotate(30deg);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate3d(2px, 0, 0) rotate(60deg);
+  }
 }
 
 /* Background */
@@ -503,112 +518,10 @@ contribution-graph-celebration {
   animation: moveWeight 10s infinite alternate;
 }
 
-/* Animations */
-@keyframes moveCrane {
-  0%,
-  20% {
-    transform: rotateY(0);
-  }
-  70%,
-  100% {
-    transform: rotateY(45deg);
-  }
-}
-@keyframes moveWeight {
-  0%,
-  20% {
-    transform: rotateY(0) translateX(0);
-  }
-  70%,
-  100% {
-    transform: rotateY(45deg) translateX(-50%);
-  }
-}
-@keyframes moveLineOne {
-  0%,
-  20% {
-    transform: rotateY(0) rotateZ(-10deg);
-  }
-  70%,
-  100% {
-    transform: rotateY(45deg) rotateZ(-10deg);
-  }
-}
-@keyframes moveLineTwo {
-  0%,
-  20% {
-    transform: rotateY(0) rotateZ(29deg);
-  }
-  70%,
-  100% {
-    transform: rotateY(15deg) rotateZ(29deg);
-  }
-}
-@keyframes moveLineThree {
-  0% {
-    transform: translate(0, 0);
-  }
-  20% {
-    transform: translate(2500%, -18%);
-    height: 10%;
-  }
-  60% {
-    transform: translate(11000%, -25%);
-  }
-  70% {
-    transform: translate(9100%, -25%);
-    height: 25%;
-  }
-  90%,
-  100% {
-    transform: translate(9100%, -15%);
-    height: 55%;
-  }
-}
-@keyframes moveLineThreeSmall {
-  0% {
-    transform: translate(0, 0);
-  }
-  20% {
-    transform: translate(2500%, -18%);
-    height: 15%;
-  }
-  60% {
-    transform: translate(5000%, -25%);
-  }
-  70% {
-    transform: translate(6000%, -25%);
-    height: 30%;
-  }
-  90%,
-  100% {
-    transform: translate(7000%, 0);
-    height: 60%;
-  }
-}
-@keyframes shakeBlock {
-  from,
-  to {
-    transform: translate3d(0, 0, 0) rotate(45deg);
-  }
-  10%,
-  30%,
-  50%,
-  70% {
-    transform: translate3d(-2px, 0, 0) rotate(30deg);
-  }
-  20%,
-  40%,
-  60%,
-  80% {
-    transform: translate3d(2px, 0, 0) rotate(60deg);
-  }
-}
-
-/* Responsive widths */
+/* Responsive */
 @media only screen and (max-width: 768px) {
   #content .title {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 1.8rem;
   }
   #content .socials {
