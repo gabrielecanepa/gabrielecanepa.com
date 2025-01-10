@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>@gabrielecanepa - Under construction 🏗️</title>
-    <meta name="description" content="The website is currently under construction. Come back soon to see the new version!" />
+    <title>@gabrielecanepa</title>
+    <meta name="description" content="Gabriele Canepa • Freelance Software Engineer" />
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="gabriele canepa, gabrielecanepa, itsguello, le wagon, lewagon, programming, freelance, freelance developer, software, developer, contractor, programmatore, coding, javascript, react, rails, ruby, ruby on rails, vue, html, css, github, linkedin, italy, italia, genoa, genova, liguria, blog, ai, artificial intelligence, machine learning, innovation, apps, software developer, education, school, buddyfit, startup, algolia, engineer" />
     <link rel="author" href="https://gabrielecanepa.com" type="text/html" />
@@ -13,30 +13,31 @@
     <link rel="author" href="https://linkedin.com/in/gabrielecanepa" type="text/html" />
     <link rel="author" href="mailto:me@gabrielecanepa.com" />
     <link rel="license" href="https://gabrielecanepa.mit-license.org" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏗️</text></svg>">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" href="meta/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="meta/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="meta/apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="apple-mobile-web-app-title" content="@gabrielecanepa" />
     <meta name="theme-color" content="#ff6544" />
     <meta property="og:url" content="https://gabrielecanepa.com" />
     <meta property="og:title" content="@gabrielecanepa" />
-    <meta property="og:image" content="https://gabrielecanepa.com/assets/images/banner.png" />
+    <meta property="og:image" content="https://gabrielecanepa.com/meta/banner.png" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_US" />
     <link rel="stylesheet" href="style.css" type="text/css" />
   </head>
   <body>
     <div id="content">
-      <h1 class="title">
-        <span class="typer" id="title-typer" data-words="Under construction" data-colors="#fff" data-delay="60" data-loop="1"></span>
-        <span class="cursor" data-owner="title-typer" data-cursor-display="_"></span>
-      </h1>
-      <div class="socials">
-        <a id="github-icon" class="social-icon" href="https://github.com/gabrielecanepa" target="_blank" title="GitHub">
-          <i id="github" class="icomoon-github" style="color: #ffffff"></i>
+      <div class="social">
+        <a id="github-icon" class="social-icon" href="https://github.com/gabrielecanepa" title="GitHub">
+          <i id="github" class="icomoon-github"></i>
         </a>
-        <a id="linkedin-icon" class="social-icon" href="https://linkedin.com/in/gabrielecanepa" target="_blank" title="LinkedIn">
-          <i id="linkedin" class="icomoon-linkedin" style="color: #ffffff; font-size: 2.7rem"></i>
+        <a id="linkedin-icon" class="social-icon" href="https://linkedin.com/in/gabrielecanepa" title="LinkedIn">
+          <i id="linkedin" class="icomoon-linkedin"></i>
         </a>
-        <a id="mail-icon" class="social-icon" href="mailto:hello@gabrielecanepa.com" target="_blank" title="Contact me">
-          <i id="mail" class="icomoon-mail" style="color: #ffffff; font-size: 2.7rem; margin-top: 9px"></i>
+        <a id="mail-icon" class="social-icon" href="mailto:hello@gabrielecanepa.com" title="Contact me">
+          <i id="mail" class="icomoon-mail"></i>
         </a>
       </div>
     </div>
@@ -78,13 +79,12 @@
       </div>
     </div>
 
-    <script async src="assets/libs/typer.min.js"></script>
-    <script src="assets/libs/tippy.min.js"></script>
+    <script src="lib/tippy.min.js"></script>
     <script>
       if (window.innerWidth > 768) {
-        var socialIcons = document.querySelectorAll('.social-icon');
+        var socialIcons = document.querySelectorAll('.social-icon')
         for (var i = 0; i < socialIcons.length; i++) {
-          var icon = socialIcons[i];
+          var icon = socialIcons[i]
           tippy(icon, {
             placement: 'top',
             arrow: true,
@@ -92,11 +92,11 @@
             distance: 10,
             inertia: true,
             duration: [225, 100],
-          });
+          })
         }
       }
       (async () => {
-        const keys = await caches.keys();
+        const keys = await caches.keys()
         for (i = 0; i < keys.length; i++) {
           await caches.delete(keys[i])
         }

@@ -1,25 +1,43 @@
-@import url(assets/fonts/style.css);
-
 :root {
   --color-js: #f7df1e;
-  --color-react: #2fbfe7; /* #61dafb */
+  --color-react: #61dafb;
   --color-ruby: #cc342d;
 }
 
-/* Global */
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/ubuntu.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/ubuntu.ext.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url(fonts/icomoon.eot) format("embedded-opentype"),
+       url(fonts/icomoon.ttf) format("truetype"),
+       url(fonts/icomoon.woff) format("woff"),
+       url(fonts/icomoon.svg) format("svg");
+}
+
 * {
   box-sizing: border-box;
 }
 html {
   background-color: #fd644e;
-  background: linear-gradient(to top, #ffa191, #ffc247);
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
-  overflow: hidden;
 }
-html,
-body {
+html, body {
   margin: 0;
   height: 100%;
 }
@@ -30,6 +48,73 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
   font-family: Ubuntu, sans-serif;
+}
+
+i, .icomoon-liga {
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icomoon-nodejs:before {
+  content: "\e904";
+  color: #393;
+}
+.icomoon-react:before {
+  content: "\e90a";
+  color: var(--color-react);
+}
+.icomoon-css3:before {
+  content: "\e90b";
+  color: #1572b6;
+}
+.icomoon-github2:before {
+  content: "\e90d";
+}
+.icomoon-git:before {
+  content: "\e90e";
+  color: #f14e32;
+}
+.icomoon-rails:before {
+  content: "\e90f";
+  color: #c00;
+}
+.icomoon-ruby:before {
+  content: "\e910";
+  color: var(--color-ruby);
+}
+.icomoon-javascript:before {
+  content: "\e911";
+  color: var(--color-js);
+}
+.icomoon-lewagon:before {
+  content: "\e912";
+}
+.icomoon-paperplane:before {
+  content: "\e900";
+}
+.icomoon-mail:before {
+  content: "\e901";
+}
+.icomoon-terminal:before {
+  content: "\ea81";
+}
+.icomoon-github:before {
+  content: "\eab0";
+}
+.icomoon-linkedin:before {
+  content: "\eaca";
 }
 
 /* Content */
@@ -56,7 +141,7 @@ body {
 #content .title .cursor {
   position: absolute;
 }
-#content .socials {
+#content .social {
   text-align: center;
   overflow: hidden;
   display: flex;
@@ -65,28 +150,31 @@ body {
   height: 3rem;
   z-index: 1;
 }
-#content .socials a {
+#content .social a {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 0.6rem;
+  padding: 0 0.75rem;
   text-decoration: none;
   border: 2px solid transparent;
   outline: none;
 }
-#content .socials a:focus {
+#content .social a:focus {
   border: 2px dotted #4688f1;
 }
-#content .socials i {
-  font-size: 2.5rem;
+#content .social i {
+  font-size: 3rem;
   color: #ffffff;
   cursor: pointer;
   display: inline-block;
   transition: color 300ms ease, margin-top 100ms ease;
 }
-#content .socials i:visited {
+#content .social i:visited {
   color: #ffffff;
+}
+#github-icon #github {
+  font-size: 2.75rem;
 }
 #github-icon:hover #github,
 #github-icon:focus #github,
@@ -96,6 +184,9 @@ body {
 #linkedin-icon:hover #linkedin,
 #linkedin-icon:focus #linkedin {
   color: #2977ca !important;
+}
+#mail {
+  margin-top: 0.8rem;
 }
 #mail-icon:hover #mail,
 #mail-icon:focus #mail {
@@ -219,7 +310,6 @@ body {
   width: 100%;
   height: 100%;
   bottom: 0;
-  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -524,15 +614,9 @@ body {
     font-size: 3rem;
     margin-bottom: 1.8rem;
   }
-  #content .socials {
+  #content .social {
     margin-top: 10px;
     height: 2.75rem;
-  }
-  #content .socials #mail {
-    font-size: 2.15rem;
-  }
-  #content .socials i {
-    font-size: 2.2rem;
   }
   .crane-one {
     left: 38%;
